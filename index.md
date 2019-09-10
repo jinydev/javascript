@@ -6,11 +6,12 @@ es5와 es6문법을 함께 학습을 합니다.
 
 * 자바스크립트란
 * [환경설정](./setup)
+* [노드](./setup/nodejs)
 
 ## 2강: [시작](./basic)
-* [hello world](./basic/hello.md)
-* [실행위치](./basic/execute.md)
-* [스크립트 파일](./basic/script.js)
+* [hello world](./basic/hello)
+* [실행위치](./basic/execute)
+* [스크립트 파일](./basic/script)
 * [콘솔](./basic/console)
 
 * [주석](./basic/comment)
@@ -38,20 +39,29 @@ es5와 es6문법을 함께 학습을 합니다.
 * for-of
 * while
 
-## 7강: 함수
+## 7강: [함수](./basic/function)
+* 함수 선언
+* 함수 실행
+* 반환값
+* 매개변수
+* 익명함수
+* 화살표
+* call, apply, bind
+
+## 8강: [스코프](./basic/scope)
+
+## 9강: [객체](./basic/oop)
+
+## 10강: dom 제어
+* 브라우저
+* [dom](./dom)
 
 
-## 8강: 객체
+## 11강: Jquery
 
-## 9강: dom 제어
+## 12강: 클로저 및 콜백
 
-## 10강: Jquery
-
-## 11강: 클로저 및 콜백
-
-## 12강: ajax
-
-## 13강: 브라우저
+## 13강: ajax
 
 ## 14강: 이벤트
 
