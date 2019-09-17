@@ -49,23 +49,32 @@ es5와 es6문법을 함께 학습을 합니다.
 
 ### 배열
 * [배열](./basic/variable/array)
+
+### 형변환
+* [변환](./basic/variable/cast)
+
 ---
 
 ## 4강: [연산자](./basic/operation)
 * 산술연산자
 
-
 ---
 
 ## 5강: [제어문](./basic/condition)
-* if
-* switch
+조건문은 동작의 제어를 처리합니다. 크게 `if`와 `switch`가 있습니다.
+
+* [if](./basic/condition/if)
+* [3항 연산자](./basic/condition/ternary)
+* [switch](./basic/condition/switch)
 * 메타문법
 
 ---
 
 ## 6강: [반복문](./basic/loop)
 반복문은 특정 코드의 영역을 반복하여 수행을 하는 것을 말합니다.
+
+* [for](./basic/loop/for)
+* [while](./basic/loop/while)
 
 ### 지정 반복
 * for
@@ -82,13 +91,16 @@ es5와 es6문법을 함께 학습을 합니다.
 ---
 
 ## 7강: [함수](./basic/function)
-* 함수 선언
-* 함수 실행
-* 반환값
-* 매개변수
-* 익명함수
-* 화살표
-* call, apply, bind
+
+* [함수실행](./basic/function/execute)
+* [스코프](./basic/function/scope)
+* [매개변수](./basic/function/param)
+* [반환값](./basic/function/return)
+
+* [익명](./basic/function/anonymous)함수
+* [화살표](./basic/function/arrow)함수
+
+* [call](./basic/function/call), apply, bind
 
 ---
 
@@ -156,3 +168,4 @@ es5와 es6문법을 함께 학습을 합니다.
 
 * 자바스크립트 200제 (정보문화사)
 * 런닝 자바스크립트 (한빛미디어)
+* [javascript.info](http://javascript.info/)

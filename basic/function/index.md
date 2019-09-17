@@ -1,4 +1,22 @@
 # 함수
+함수는 코드를 집합화 하여 재사용을 위한 기술 입니다.
+
+* [함수실행](execute)
+* [스코프](scope)
+* [매개변수](param)
+* [반환값](return)
+
+* [익명](anonymous)함수
+* [화살표](arrow)함수
+
+* [call](call), apply, bind
+
+## 함수의 구조
+함수는 크게 3가지의 구조를 가지고 있습니다.
+
+* 입력
+* 출력
+* 본체
 
 ## 함수 선언
 함수를 통하여 반복코드를 실행할 수 있습니다.
@@ -18,221 +36,156 @@ function greeting()
 
 함수는 줄괄호 `{`와 `}`로 코드의 영역이 감싸져 있습니다.
 
----
+## 중복코드
+순처적으로 실행되는 프로그램의 코드에서 동일한 작업을 할때 코드가 중복됩니다.
+중복된 코드를 하나의 집합으로 분리하여 재상용을 합니다.
 
-## 함수의 실행
+* 중복코드 제거
+* 코드 재사용
+* 유지보수 향상
 
-### 함수호출
-함수 식별자와 `()`를 통하여 함수를 호출합니다.
-`()`는 함수로 전달되는 매개값을 입력합니다. 없으면 공백으로 처리합니다.
+## 중첩함수
+함수 안에 새로운 함수를 선언할 수 있습니다.
 
 ```javascript
-함수명();
-```
-
-```javascript
-// 함수를 선언합니다.
-function greeting()
+function execute()
 {
-    console.log("안녕하세요");
+    function hello()
+    {
+        console.log("hello world");
+    }
+
+    hello();
 }
 
-// 함수를 실행합니다.
-greeting();
+execute();
 ```
 
-실행결과
-```
-$ node function_01.js
-안녕하세요
-```
-### 함수 객체
-아직 객체라는 용어가 생소할 수 있습니다. 자바스크립트는 특이하게도 함수를 객체로 처리를 합니다.
-
-```javascript
-greeting;
-```
-
-함수뒤에 `()`를 붙이지 않으면, 함수의 실행이 되지 않습니다.
-
-함수의 참조하는 값으로 표현이 됩니다. 참조값은 다른 변수로 저장을 할 수도 있습니다.
-
-```javascript
-// 함수를 선언합니다.
-function greeting()
-{
-    console.log("안녕하세요");
-}
-
-// 참조값을 복사합니다.
-const f = greeting;
-
-// 함수를 실행합니다.
-f();
-```
-
-함수의 호출과 참조는 괄호(`()`)를 통하여 구분이 되는 것을 알 수 있습니다. 또한 `()`의 역활을 명확히 알 수 있습니다. 
-
----
-
-## 반환값
-함수는 내부의 코드를 실행후에 반환값을 전달 할 수 있습니다.
-
-
-### return
-`return` 키워드는 함수의 종료와 이후 지정된 리터럴 값을 반환합니다.
-
-```javascript
-// 함수를 선언합니다.
-function greeting()
-{
-    return "안녕하세요";
-}
-
-// 함수를 실행합니다.
-let message = greeting();
-console.log(message);
-```
-
-반한값은 1개만 존재합니다. 여러개의 반환값이 있을경우, 배열 또는 객체를 반환하면 됩니다.
 
 실행결과
 ```
 $ node function_02.js
-안녕하세요
+hello world
 ```
 
----
-
-## 매개변수
-함수의 반환값에 대해서 알아 보았습니다. 반대로 함수에게 값을 전달을 할 수 있습니다.  
-이를 매개변수라고 합니다.
-
-매개 변수는 함수의 괄호 `()`안에 값을 넣어주면 됩니다.
-
-### 매개변수 지정
-함수에서 매개변수를 사용하기 위해서는 전달되는 값과 받은 값이 동일하여야 합니다.
+### 함수 외부호출
+함수내부에서 선언된 함수는 `스코프`영향으로 함수 내부에서만 호출이 가능합니다.
 
 ```javascript
-// 함수를 선언합니다.
-function greeting(msg)
+function execute()
 {
-    return msg + "!!!";
+    function hello()
+    {
+        console.log("hello world");
+    }
+
+    hello(); // 내부호출
 }
 
-// 함수를 실행합니다.
-let message = greeting("안녕하세요");
-console.log(message);
+execute();
+
+hello(); // 외부호출
 ```
 
-함수를 선언을 할때 전달 받을 매개변수 명을 같이 선언을 합니다. 또한 함수를 호출할때 인자값을 같이 입력을 합니다.
-
-함수에서 받아드리는 값을 `매개변수`라고 하고, 함수를 호출할때 전달하는 값을 `인자값`이라고 합니다.
-
-결과확인
-```
-$ node function_04.js
-안녕하세요!!!
-```
-
-### 암시적 매개변수
-매개변수를 지정하면 반드시 인자값을 전달을 해야 합니다. 하지만, 자바스크립트에서는 선언된 매개변수를 암시적으로 생략을 할 수 있습니다.
-생략을 하는 경우 매개 변수는 undefined 가 됩니다.
-
-```javascript
-// 함수를 선언합니다.
-function greeting(msg)
-{
-    return msg + "!!!";
-}
-
-// 함수를 실행합니다. 인자값을 생략합니다.
-let message = greeting();
-console.log(message);
-```
+함수내에 선언된 함수를 외부에서 호출할 경우 오류가 발생됩니다.
 
 실행결과
 ```
-$ node function_05.js
-undefined!!!
+$ node function_03.js
+hello world
+d:\jinydev\javascript\basic\function\ex\function_03.js:13
+hello(); // 외부호출
+^
+
+ReferenceError: hello is not defined
+    at Object.<anonymous> (d:\jinydev\javascript\basic\function\ex\function_03.js:13:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
 ```
 
-### 매게변수 갯수
-여러개의 매개변수를 전달하고자 할때에는 콤마로 구분하여 동일한 갯수를 지정을 하여야 합니다.
+## 함수의 종류
+프로그램 언어에서 함수는 크게 2종류가 있습니다.
 
-> 다른 언어에서는 함수의 매개변수 갯수에 따라서 다른 함수로 구별을 하는 경우가 있습니다.
-> 자바스크립트는 매개변수의 개수에 따라서 함수를 구별하지 않습니다. 동일함 함수로 처리를 합니다.
+언어에서 기본적으로 제공해 주는 `내장함수`와 사용자가 직접 생성하여 활용하는 `사용자함수`가 있습니다. 
+자바스크립트에서는 `내장함수`를 `코어함수`라고 부르기도 합니다.
 
+이외에 `콜백 함수`,`클로저`가 있습니다.
 
-### 매개변수 해제
-es6 자바스크립트는 새로운 해체 기능이 추가되었습니다.
-이를 함수의 매개변수에 적용을 할 수 있습니다.
-
-### 기본값
-es6에서 자바스크립트 함수는 기본값을 설정할 수 있게 되었습니다.
+## 콜백함수
+자바스크립트에서 많은 빈도로 사용되는 함수가 `콜백함수` 입니다.
 
 ```javascript
-function greeting(msg = "hello")
+function 함수명(callback)
 {
-    return msg + "!!!";
+    callback(결과);
 }
 ```
 
-### 매개변수의 범위
-외부로 값을 전달받는 매개변수의 경우 범위는 함수 내부 입니다.
-함수 내부에서는 전달 받은 값을 사용을 할 수 있지만, 함수 외부에서는 함수내의 변수에 접근을 할 수 없습니다.
+기존에는 함수의 결과를 `return`으로 반환을 하였습니다. 이와 유사하게 
+콜백은 함수의 내부 결과값을 함수 외부로 전달할 때 사용을 합니다.
 
-
-
-## 익명함수
+콜백을 사용하면 `구현`과 `처리`를 분리하여 작성을 할 수 있습니다.
 
 ```javascript
-const f = function() {
-    // 함수내용
-};
+function hello(username)
+{
+    console.log(username + " 반갑습니다.");
+}
+
+function greeting(callback)
+{
+    let result = "이호진"; // 결과값
+    callback(result);
+}
+
+greeting(hello);
 ```
 
-## 화살표 함수
-es6에서는 새로운 함수 표기법인 화살표 기호를 지원합니다.
-화살표 문법은 단축화된 함수 표기법입니다.
+`greeting()`함수는 하나의 익명함수를 전달 받습니다. 익명함수는 `return` 대신에 결과값을 처리하는 역할을 수행합니다.
+이를 `콜백`이라 합니다.
+
+실행결과
+```
+$ node callback_01.js
+이호진 반갑습니다.
+```
+
+### return vs callback
+리턴 대신에 콜백을 사용합니다.
+콜백을 사용하는 이유는 비동기 처리를 위해서 입니다.
+
+---
+
+## 클로저
+함수내에서 생성된 변수는 지역변수 입니다.
+지역 변수는 함수의 실행과 동시에 생성이되고, 함수의 작업이 완료되면 메모리에서 제거가 됩니다.
+
+하지만, 지역변수를 계속 남겨두어야 하는 경우가 있습니다.
+
+이때, 클로저 함수를 사용합니다. 클로저는 지역변수를 삭제하지 않고 남겨 두게 됩니다.
 
 ```javascript
-const f = function() {
-    return "hello";
+
+function 함수명()
+{
+    var 변수;
+    function 클로저()
+    {
+        변수사용 및 처리
+
+    }
+
+    return 클로저;
 }
 ```
-위와 같은 익명함수를 다음과 같이 화살표 함수로 표현을 변경할 수 있습니다.
 
-```javascript
-const f = () => "hello"; 
-```
-화살표 함수는 `function` 키워드를 사용하지 않기 때문에 보다 빠르게 코드를 작성할 수 있습니다.
-단점으로는 함수명 식별자를 가지는 형태로 선언을 할 수 없습니다.
+### 클로저 현상
+참조되는 메모리가 물려있을 경우, 사라지지 않는 현상.
 
 
-```javascript
-const f = () => {
-    // 함수 내용
-};
-```
-
-## call, apply, bind
-
-### call
-모든 함수에서 사용이 가능합니다.
-
-
-```javascript
-```
-
-### apply
-
-```javascript
-```
-
-### bind
-
-```javascript
-```
 
 
