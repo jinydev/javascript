@@ -81,12 +81,11 @@ es5와 es6문법을 함께 학습을 합니다.
 * for-in
 * for-of
 
-### 조건 반복문
-* while
-
 ### 반복 제어문
-* continue
-* break
+
+* [continue](./basic/loop/continue)
+* [break](./basic/loop/break)
+
 
 ---
 
