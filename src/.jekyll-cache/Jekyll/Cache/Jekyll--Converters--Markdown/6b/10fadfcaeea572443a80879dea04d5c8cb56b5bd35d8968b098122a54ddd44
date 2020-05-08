@@ -1,0 +1,29 @@
+I"<h1 id="switch">switch</h1>
+<p>if문은 조건을 다양하게 주어질 수 있습니다.
+크기를 비교하고, 참과 거짓을 구별하며, 값의 일치를 판별할 수 있습니다.</p>
+
+<p>만일 다수의 값의 일치 여부만을 판별하고자 할 경우에는 복잡한 if문 보다 switch을 사용하면 더  편리 합니다.</p>
+
+<h2>==</h2>
+<p><code class="highlighter-rouge">switch</code>는 <code class="highlighter-rouge">if</code>조건과 달리 <code class="highlighter-rouge">==</code> 연산조건 상태만을 파악을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="p">(</span><span class="err">표현식</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="err">값</span><span class="mi">1</span><span class="p">:</span>
+        <span class="c1">// 동작1</span>
+        <span class="k">break</span><span class="p">;</span>
+    
+    <span class="k">case</span> <span class="err">값</span><span class="mi">2</span><span class="p">:</span>
+        <span class="c1">// 동작2</span>
+        <span class="k">break</span><span class="p">;</span>
+    
+    <span class="nl">default</span><span class="p">:</span>
+        <span class="c1">// 동작3</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="case">case</h2>
+<p>case는 표현식과 값이 일치하는 경우에 동작을 수행합니다.</p>
+
+<h2 id="break">break</h2>
+
+:ET

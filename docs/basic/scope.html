@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>Javascript | javascript</title>
+            <meta name="title" content="javascript" /><meta name="description" content="javascript를 학습합니다." /><meta name="keyword" content="javascript" /><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            body {
+                font-family: "Nanum Gothic", sans-serif;
+            }
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        
+
+    </head>
+    <body>
+        <!--네비게이션--><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/setup">개발환경
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+        <div class="container"><nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <!--breadcrumb loop--></ol>    
+</nav></div>
+        
+        
+        <!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <section>
+                <h1 id="스코프">스코프</h1>
+<hr />
+<p>스코프는 변수의 영역을 의미합니다.</p>
+
+<h2 id="정적-스코프">정적 스코프</h2>
+<hr />
+<p>자바스크립트는 정적 스코프를 가지고 있습니다.</p>
+
+<p>정적 스코프는 크게 가지로 구분이 됩니다.</p>
+<ul>
+  <li>전역 스코프</li>
+  <li>블록 스코프</li>
+  <li>함수 스코프</li>
+</ul>
+
+<h3 id="global-scope">global scope</h3>
+<hr />
+
+<h3 id="block-scope">block scope</h3>
+<hr />
+<p>es6는 새로운 변수의 선언 키워드 <code class="highlighter-rouge">let</code>을 지원합니다.
+또한 새로운 타입인 <code class="highlighter-rouge">const</code>를 지원합니다.</p>
+
+<p><code class="highlighter-rouge">let</code>과 <code class="highlighter-rouge">const</code>는 블럭 스코프를 지원하기 위해서 선언을 합니다.</p>
+
+<p>블럭 스코프는 <code class="highlighter-rouge">블럭</code>으로 작성된 영역에서나 접근이 가능한 변수를 말합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 블럭을 선언합니다.</span>
+<span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="c1">// 블럭안에 있는 변수를 출력합니다.</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 블럭밖에서 변수를 출려합니다.</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node scope_block.js
+5
+d:\jinydev\javascript\basic\ex\scope_block.js:9
+console.log(x);
+            ^
+
+ReferenceError: x is not defined
+    at Object.&lt;anonymous&gt; (d:\jinydev\javascript\basic\ex\scope_block.js:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+</code></pre></div></div>
+
+<p>블럭안에 있는 x값은 정상적으로 출력이 됩니다.<br />
+블럭 밖에서 블럭안에 있는 x를 접근할때에는 오류가 발생합니다.</p>
+
+<h3 id="function-scope">function scope</h3>
+<hr />
+
+<h2 id="전역-스코프">전역 스코프</h2>
+<hr />
+<p>스코프는 계층적 입니다. 전역 스코프의 변수를 전역 변수라고 합니다.
+전역 변수는 누구나 어디에서든지 접근이 가능합니다.</p>
+
+<h2 id="변수-숨김">변수 숨김</h2>
+<hr />
+
+<h2 id="호이스팅">호이스팅</h2>
+<hr />
+
+<h2 id="스트릭트-모드">스트릭트 모드</h2>
+<hr />
+
+
+            </section>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><!--사이드메뉴1-->
+<ul class="list-group">
+    <li class="list-group-item"><a href="/setup">준비 작업</a></li>
+</ul>
+<br>
+</aside>            
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+        <div class="container">
+            <!--구글 애드센스-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-3321560028329475"
+                data-ad-slot="6043271504"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <br>
+        </div>
+             
+
+        <!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159909206-1');
+        </script>
+    </body>
+
+</html>

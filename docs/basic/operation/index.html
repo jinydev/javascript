@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>Javascript | javascript</title>
+            <meta name="title" content="javascript" /><meta name="description" content="javascript를 학습합니다." /><meta name="keyword" content="javascript" /><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            body {
+                font-family: "Nanum Gothic", sans-serif;
+            }
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        
+
+    </head>
+    <body>
+        <!--네비게이션--><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/setup">개발환경
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+        <div class="container"><nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <!--breadcrumb loop--></ol>    
+</nav></div>
+        
+        
+        <!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <section>
+                <h1 id="연산자">연산자</h1>
+
+<h2 id="표현식">표현식</h2>
+<p>표현식(expression)은 값으로 변경이 되는 문장입니다.
+언어에서는 문(statement)는 지시자 입니다. 지시자를 이용하여 무엇을 요청하는 것을 표현식이라고 합니다.</p>
+
+<p>표현식을 요청을 받고, 결과 값을 반환합니다.</p>
+
+<h3 id="대입">대입</h3>
+<p>변수에 값을 대입하기 위하여 등호 <code class="highlighter-rouge">=</code>를 사용합니다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>변수명 = 값;
+</code></pre></div></div>
+
+<p>왼쪽에 변수명을 작성하고, 오른쪽에 값을 작성합니다.</p>
+
+<hr />
+
+<h2 id="산술-연산">산술 연산</h2>
+<p>산술 연산이란 <code class="highlighter-rouge">+</code> <code class="highlighter-rouge">-</code> <code class="highlighter-rouge">x</code> <code class="highlighter-rouge">/</code> 4가지의 사칙연산을 말합니다.
+사칙연산은 초등학교 시절에서 학습한 내용입니다. 컴퓨터의 기본동작은 바로 사칙 연산에서 부터 시작됩니다.</p>
+
+<h3 id="덧셈">덧셈</h3>
+<p>숫자를 더하는 연산입니다.</p>
+
+<h3 id="뺄셈">뺄셈</h3>
+
+<h3 id="곱셈">곱셈</h3>
+
+<h3 id="나눗셈">나눗셈</h3>
+<p>나눗셈은 특이하게도 2개의 결과 값이 생성하게 됩니다. 바로 <code class="highlighter-rouge">못</code>과 <code class="highlighter-rouge">나머지</code>입니다.</p>
+
+<h2 id="비교">비교</h2>
+
+<h2 id="결합">결합</h2>
+<p>자바스크립트는 문자열을 결합할때 <code class="highlighter-rouge">+</code>기호를 사용합니다.
+문자열은 오른쪽에서 왼쪽 순으로 결합이 이루어 집니다.</p>
+
+<p>문자열은 <code class="highlighter-rouge">+</code>만으로 연산을 할 수 있습니다. 다른 연산 기호로는 결합을 할 수 없습니다.</p>
+
+<blockquote>
+  <p>php와 같은 언어는 문자열을 결합할때 <code class="highlighter-rouge">.</code>를 사용합니다.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="복합연산">복합연산</h2>
+<p>복합연산은 간단한 산술 연산을 쉽게 표현을 하는 방법입니다.</p>
+
+<h3>+=</h3>
+<p>다음과 같이 자기 자신에 1을 더하여 증가하는 식이 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>위의 식을 보면 변수명 a 가 2번 사용이 되었습니다. 이를 쉽게 다음과 같이 바꿀수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>동일한 결과를 수행합니다. 만일 2씩 증가하고자 하는 경우에는 다음과 같이 표현을 변경할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="-">-=</h3>
+<p>+1을 하여 증가하는 대신에 -1씩 감소하는 식도 표현을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">-</span> <span class="mi">1</span> <span class="p">;</span>
+</code></pre></div></div>
+
+<p>위 식을 다음과 같이 간단하게 표현을 변경할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">-=</span> <span class="mi">1</span> <span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="-1">*=</h3>
+<p>곱셈도 간단하게 표현을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">*=</span> <span class="mi">2</span> <span class="p">;</span>
+</code></pre></div></div>
+
+<p>곱셈을 간단하게 표현을 할때 <code class="highlighter-rouge">1</code>은 사용하지 않습니다. 1을 곱하면 항상 자기 자신이 나오기 때문입니다.
+1을 곱하는 동작은 컴퓨터의 자원만 소모하게 됩니다.</p>
+
+<h3 id="-2">/=</h3>
+<p>나눗셈도 간단하게 표현을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">/=</span> <span class="mi">2</span> <span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="-3">%=</h3>
+<p>나머지도 간단하게 표현을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">%=</span> <span class="mi">2</span> <span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="증감연산자">증감연산자</h2>
+<p>복합연산자를 이용하여 좀더 간단한 연산표현을 할 수 있습니다.</p>
+
+<h3 id="축약표현">축약표현</h3>
+<p>복합 연산자는 간단한 산술연산 표현시 중복된 변수를 제거할 수 있었습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">a</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>위의 결과는 동일합니다. 위의 식에서 <code class="highlighter-rouge">a += 1;</code>를 좀더 간단하게 <code class="highlighter-rouge">a++</code>형태로 더 축약하여 표현을 할 수 있습니다.
+<code class="highlighter-rouge">a++</code> 축약 표현은 1씩 증가만 할 수 있는 반면에, <code class="highlighter-rouge">a += 1;</code>표현은 등차수열 처럼 지정갑 값만큼 증가를 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nx">a</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>위의 식도 <code class="highlighter-rouge">a--</code>형태로 간단하게 축약 표현을 할 수 있습니다.</p>
+
+<h3 id="선순위-후순위">선순위, 후순위</h3>
+<p>기호를 두개를 붙인 <code class="highlighter-rouge">++</code>는 다음과 같이 2가지로 구분을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span><span class="o">++</span><span class="p">;</span> <span class="c1">// 후순위</span>
+<span class="o">++</span><span class="nx">a</span><span class="p">;</span> <span class="c1">// 선순위</span>
+</code></pre></div></div>
+
+<p>변수명 앞에도 <code class="highlighter-rouge">++</code>를 붙일 수 있습니다. 
+변수 <code class="highlighter-rouge">a</code>를 사용하기 전에 +1을 할지, 사용후에 +1을 할지를 구분할 수 있습니다.</p>
+
+<h3 id="차이점">차이점</h3>
+<p>선순위와 후순이는 다른 변수에 적용하여 사용을 할때 다르게 동작을 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="o">++</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="o">++</span><span class="nx">a</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>연산의 결과가 비슷해 보여도, 다른 결과를 출력하게 됩니다.</p>
+
+<blockquote>
+  <p>실제 개발 환경에서는 <code class="highlighter-rouge">a++</code>와 같이 후순위 연산을 보다 많이 사용을 합니다.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="우선순위">우선순위</h2>
+<p>복수의 연산을 하나의 식으로 사용을 할때에는 우선 순위가 발생하게 됩니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span><span class="p">;</span> 
+</code></pre></div></div>
+<p>위의 식을 보면 연산자의 순서는 <code class="highlighter-rouge">+</code> 다음에 <code class="highlighter-rouge">*</code> 가 있습니다. 하지만, 실제 계산에서는 <code class="highlighter-rouge">*</code>를 먼저 실행합니다.
+이처럼 복수의 연산자가 있을 경우 순서를 가지게 되는데, 이를 연산자 우선순위라고 합니다.</p>
+
+<h3 id="순위변경">순위변경</h3>
+<p>연산자의 순서를 변경할 수 있습니다. <code class="highlighter-rouge">()</code>를 사용하면 됩니다.</p>
+
+<hr />
+
+<h2 id="논리">논리</h2>
+
+<h2 id="3항-연산자">3항 연산자</h2>
+
+<h2 id="쉽표-연산자">쉽표 연산자</h2>
+<p>여러 작업을 묽어서 처리를 할때 사용을 합니다.</p>
+
+<h2 id="비트-연산">비트 연산</h2>
+
+<h2 id="typeof">typeof</h2>
+<p>피연산자의 타입을 반환합니다.</p>
+
+<h2 id="void">void</h2>
+
+<h2 id="해체destructuring">해체(destructuring)</h2>
+<p>es6에서 새롭게 도입이 되었습니다. 객체나 배열을 해체 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 객체를 선언합니다.</span>
+<span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">first</span><span class="p">:</span><span class="dl">"</span><span class="s2">lee</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">last</span><span class="p">:</span><span class="dl">"</span><span class="s2">hojin</span><span class="dl">"</span>
+<span class="p">}</span>
+
+<span class="c1">// 객체를 해체 합니다.</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">first</span><span class="p">,</span> <span class="nx">last</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">obj</span><span class="p">;</span>
+
+<span class="c1">// 해체된 객체값을 확인합니다.</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">last</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>결과확인</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node destructuring.js
+lee
+hojin
+</code></pre></div></div>
+
+<p>유효한 프로퍼티만 해체가 됩니다.</p>
+
+
+            </section>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><!--사이드메뉴1-->
+<ul class="list-group">
+    <li class="list-group-item"><a href="/setup">준비 작업</a></li>
+</ul>
+<br>
+</aside>            
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+        <div class="container">
+            <!--구글 애드센스-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-fb+5w+4e-db+86"
+                data-ad-client="ca-pub-3321560028329475"
+                data-ad-slot="6043271504"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <br>
+        </div>
+             
+
+        <!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159909206-1');
+        </script>
+    </body>
+
+</html>

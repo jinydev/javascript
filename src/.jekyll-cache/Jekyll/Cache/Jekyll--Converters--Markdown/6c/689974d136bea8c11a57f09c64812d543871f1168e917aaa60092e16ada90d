@@ -1,0 +1,19 @@
+I"U<h1 id="call-apply-bind">call, apply, bind</h1>
+<hr />
+
+<h3 id="call">call</h3>
+<hr />
+<p>모든 함수에서 사용이 가능합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<h3 id="apply">apply</h3>
+<hr />
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<h3 id="bind">bind</h3>
+<hr />
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+:ET
