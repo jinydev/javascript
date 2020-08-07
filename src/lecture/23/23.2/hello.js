@@ -1,0 +1,3 @@
+window.onload = function () {
+    alert("만나서 반갑습니다.");
+}

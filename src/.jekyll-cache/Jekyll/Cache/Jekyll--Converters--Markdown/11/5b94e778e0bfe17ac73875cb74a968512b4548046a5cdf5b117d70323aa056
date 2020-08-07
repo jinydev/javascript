@@ -1,0 +1,79 @@
+I"�<p>https://www.youtube.com/watch?v=lpHBSI5Xyhc&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=23</p>
+
+<h1 id="23-코드분리">23. 코드분리</h1>
+<p>html문서안에 있는 자바스크립트 코드를 외부의 파일로 분리합니다.</p>
+
+<p>html 작성과 자바스크립트 코드의 작성을 분업하여 개발을 할때 매우 유용합니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">자바스크립트</span> <span class="err">코드</span>
+</code></pre></div></div>
+<p>별도의 파일을 script.js 로 생성을 합니다.
+생성된 script.js 파일을 기존의 html에 연결을 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>script 테그는 <code class="highlighter-rouge">단일테그</code>로 사용할 수 없고, <code class="highlighter-rouge">범위테그</code> 형태로만 사용이 가능합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>learn 자바스크립트<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>외부 자바스크립트 실행<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">스크립트가 실행됩니다.</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>외부로 스크립트를 분리하는 경우 여러 파일을 같이 적용을 할 수 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">만나서 반갑습니다.</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>그리고 html 코드를 수정합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>learn 자바스크립트<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"hello.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>외부 자바스크립트 실행<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>2개의 자바스크립트 코드를 연결을 할 수 있지만, 두번째 hello.js만 실행이 됩니다.</p>
+
+<p>이유는 2개의 파일 모드 window.load 가 될때 실행이 되기 때문입니다.
+앞의 script.js의 window.load가 덥어쓰게 되는 것입니다.</p>
+
+<p>즉, 대입을 통하여 값을 지정하는 경우에는 하나만 실행이 가능합니다.</p>
+
+<h2 id="이벤트-등록">이벤트 등록</h2>
+<p>이벤트 등록을 통하여 여러개의 초기화 코드가 동작이 되도록 지정을 할 수 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">load</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="c1">// 초기화 동작</span>
+<span class="p">});</span>
+</code></pre></div></div>
+<p>이벤트 등록을 통하여 여러개의 동작을 <code class="highlighter-rouge">누적</code>하여 적용할 수 있습니다.</p>
+
+<p>등록된 모든 이벤트가 순차적으로 실행이 됩니다.</p>
+
+:ET

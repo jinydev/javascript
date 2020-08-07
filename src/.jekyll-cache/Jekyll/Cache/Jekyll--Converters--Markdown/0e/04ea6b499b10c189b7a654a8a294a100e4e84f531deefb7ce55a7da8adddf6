@@ -1,0 +1,47 @@
+I"�<p>https://www.youtube.com/watch?v=zkdTX7vxLLA&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=21</p>
+
+<h1 id="초기화">초기화</h1>
+<p>정상적으로 자바스크립트가 실행이 되기 위해서는 모든 html의 문서가 브라우저로 전송되어 load가 완료되었을때
+실행해 주어야 합니다.</p>
+
+<p>브라우저는 html 문서와 동시에 img등의 다른 자원들로 다운로드 받게 됩니다.</p>
+
+<p>자바스크립트를 문서가 로드된 후에 실행이 되도록 동작 시점을 제어 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">function</span> <span class="nx">result</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="dl">"</span><span class="s2">누구세요</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">name</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">님 반갑습니다.</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">btnHello</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">init</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="nx">btnHello</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span> <span class="c1">// 함수를 지정합니다. 이때, ()는 사용하지 않습니다.</span>
+<span class="p">}</span>
+
+<span class="nb">window</span><span class="p">.</span><span class="nx">load</span> <span class="o">=</span> <span class="nx">init</span><span class="p">;</span> <span class="c1">// 윈도우가 로드가 되면 init 함수를 호출합니다.</span>
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"btnHello"</span><span class="nt">/&gt;</span>답변<span class="nt">&lt;/span&gt;</span>
+</code></pre></div></div>
+
+<h2 id="id-표기">id 표기</h2>
+<p>자바스크립트와 html의 id 이름을 이용하여 요소의 동작을 제어하였습니다.
+html은 id의 표기를 낙타 표기법으로 사용하지 않습니다. 여러 단어들이 연결이 될 때에는 <code class="highlighter-rouge">-</code>를 사용합니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">btn</span><span class="o">-</span><span class="nx">hello</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span> <span class="c1">// 오류</span>
+</code></pre></div></div>
+
+<p>하지만, 자바스크립트는 <code class="highlighter-rouge">-</code>를 이름으로 사용할 수 없습니다.</p>
+
+<p>html문서의 표기법과 자바스크립의 사용법을 통일하기 위해서 html 문서의 요소를 찾아서 사용을 합니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">btnHello</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn-hello</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// 요소의 참조를 요청</span>
+<span class="nx">btnHello</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span>
+</code></pre></div></div>
+
+:ET

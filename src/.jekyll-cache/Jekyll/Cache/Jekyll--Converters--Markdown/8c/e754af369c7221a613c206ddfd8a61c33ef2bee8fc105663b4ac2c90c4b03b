@@ -1,0 +1,22 @@
+I"�<h1 id="xmlhttprequest">XMLHttpRequest</h1>
+<hr />
+<p>주의: IE 7+를 지원하므로 그 이전 버전의 고대 유물은 무시하자
+출처: https://unikys.tistory.com/232 [All-round programmer]</p>
+
+<ul>
+  <li><a href="XMLHttpRequest">xhr 객체</a></li>
+  <li>[요청][request]</li>
+  <li>[응답][response]</li>
+</ul>
+
+<h2 id="ajax">Ajax</h2>
+<ul>
+  <li><a href="ajax">ajax</a></li>
+</ul>
+
+<h2 id="실습">실습</h2>
+<ul>
+  <li><a href="upload">upload</a></li>
+</ul>
+
+:ET

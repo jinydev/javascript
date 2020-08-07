@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR 테스트</title>
+</head>
+<body>
+    <form id="xhrForm">
+        <input type="submit" value="전송">
+    </form>
+    <script>
+        const form = document.getElementById("xhrForm");
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            console.log("submit 클릭");
+            const xhr = new XMLHttpRequest();
+            console.log("xhr.readyState = "+xhr.readyState);
+
+            xhr.open("POST", "http://localhost:8000/upload.php");
+            xhr.setRequestHeader("Content-Type","multipart/form-data");
+            xhr.send(new FormData(form));
+        });
+    </script>
+</body>
+</html>
