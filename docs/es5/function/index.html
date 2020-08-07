@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>Javascript | javascript</title>
+            <meta name="title" content="javascript" /><meta name="description" content="javascript를 학습합니다." /><meta name="keyword" content="javascript" /><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            body {
+                font-family: "Nanum Gothic", sans-serif;
+            }
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        
+
+    </head>
+    <body>
+        <!--네비게이션--><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/setup">개발환경
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+        <div class="container"><nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <!--breadcrumb loop--></ol>    
+</nav></div>
+        
+        <!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <section>
+                <h1 id="함수">함수</h1>
+<p>함수는 코드를 집합화 하여 재사용을 위한 기술 입니다.</p>
+
+<ul>
+  <li><a href="execute">함수실행</a></li>
+  <li><a href="scope">스코프</a></li>
+  <li><a href="param">매개변수</a></li>
+  <li>
+    <p><a href="return">반환값</a></p>
+  </li>
+  <li><a href="anonymous">익명</a>함수</li>
+  <li>
+    <p><a href="arrow">화살표</a>함수</p>
+  </li>
+  <li><a href="call">call</a>, apply, bind</li>
+</ul>
+
+<h2 id="함수의-구조">함수의 구조</h2>
+<p>함수는 크게 3가지의 구조를 가지고 있습니다.</p>
+
+<ul>
+  <li>입력</li>
+  <li>출력</li>
+  <li>본체</li>
+</ul>
+
+<h2 id="함수-선언">함수 선언</h2>
+<p>함수를 통하여 반복코드를 실행할 수 있습니다.</p>
+
+<h3 id="키워드">키워드</h3>
+<p>함수를 선언을 할때에는 <code class="highlighter-rouge">function</code> 키워드를 사용합니다.</p>
+
+<h3 id="함수명">함수명</h3>
+<p><code class="highlighter-rouge">function</code> 키워드 다음에는 함수명 식별자를 작성합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">greeting</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">안녕하세요</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>함수는 줄괄호 <code class="highlighter-rouge">{</code>와 <code class="highlighter-rouge">}</code>로 코드의 영역이 감싸져 있습니다.</p>
+
+<h2 id="중복코드">중복코드</h2>
+<p>순처적으로 실행되는 프로그램의 코드에서 동일한 작업을 할때 코드가 중복됩니다.
+중복된 코드를 하나의 집합으로 분리하여 재상용을 합니다.</p>
+
+<ul>
+  <li>중복코드 제거</li>
+  <li>코드 재사용</li>
+  <li>유지보수 향상</li>
+</ul>
+
+<h2 id="중첩함수">중첩함수</h2>
+<p>함수 안에 새로운 함수를 선언할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">execute</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">hello</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">hello</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="nx">execute</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_02.js
+hello world
+</code></pre></div></div>
+
+<h3 id="함수-외부호출">함수 외부호출</h3>
+<p>함수내부에서 선언된 함수는 <code class="highlighter-rouge">스코프</code>영향으로 함수 내부에서만 호출이 가능합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">execute</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">hello</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nx">hello</span><span class="p">();</span> <span class="c1">// 내부호출</span>
+<span class="p">}</span>
+
+<span class="nx">execute</span><span class="p">();</span>
+
+<span class="nx">hello</span><span class="p">();</span> <span class="c1">// 외부호출</span>
+</code></pre></div></div>
+
+<p>함수내에 선언된 함수를 외부에서 호출할 경우 오류가 발생됩니다.</p>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_03.js
+hello world
+d:\jinydev\javascript\basic\function\ex\function_03.js:13
+hello(); // 외부호출
+^
+
+ReferenceError: hello is not defined
+    at Object.&lt;anonymous&gt; (d:\jinydev\javascript\basic\function\ex\function_03.js:13:1)
+    at Module._compile (internal/modules/cjs/loader.js:936:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)
+    at Module.load (internal/modules/cjs/loader.js:790:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:703:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:999:10)
+    at internal/main/run_main_module.js:17:11
+</code></pre></div></div>
+
+<h2 id="함수의-종류">함수의 종류</h2>
+<p>프로그램 언어에서 함수는 크게 2종류가 있습니다.</p>
+
+<p>언어에서 기본적으로 제공해 주는 <code class="highlighter-rouge">내장함수</code>와 사용자가 직접 생성하여 활용하는 <code class="highlighter-rouge">사용자함수</code>가 있습니다. 
+자바스크립트에서는 <code class="highlighter-rouge">내장함수</code>를 <code class="highlighter-rouge">코어함수</code>라고 부르기도 합니다.</p>
+
+<p>이외에 <code class="highlighter-rouge">콜백 함수</code>,<code class="highlighter-rouge">클로저</code>가 있습니다.</p>
+
+<h2 id="콜백함수">콜백함수</h2>
+<p>자바스크립트에서 많은 빈도로 사용되는 함수가 <code class="highlighter-rouge">콜백함수</code> 입니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="err">함수명</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nx">callback</span><span class="p">(</span><span class="err">결과</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>기존에는 함수의 결과를 <code class="highlighter-rouge">return</code>으로 반환을 하였습니다. 이와 유사하게 
+콜백은 함수의 내부 결과값을 함수 외부로 전달할 때 사용을 합니다.</p>
+
+<p>콜백을 사용하면 <code class="highlighter-rouge">구현</code>과 <code class="highlighter-rouge">처리</code>를 분리하여 작성을 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">username</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">username</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> 반갑습니다.</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">greeting</span><span class="p">(</span><span class="nx">callback</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">이호진</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// 결과값</span>
+    <span class="nx">callback</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">greeting</span><span class="p">(</span><span class="nx">hello</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">greeting()</code>함수는 하나의 익명함수를 전달 받습니다. 익명함수는 <code class="highlighter-rouge">return</code> 대신에 결과값을 처리하는 역할을 수행합니다.
+이를 <code class="highlighter-rouge">콜백</code>이라 합니다.</p>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node callback_01.js
+이호진 반갑습니다.
+</code></pre></div></div>
+
+<h3 id="return-vs-callback">return vs callback</h3>
+<p>리턴 대신에 콜백을 사용합니다.
+콜백을 사용하는 이유는 비동기 처리를 위해서 입니다.</p>
+
+<hr />
+
+<h2 id="클로저">클로저</h2>
+<p>함수내에서 생성된 변수는 지역변수 입니다.
+지역 변수는 함수의 실행과 동시에 생성이되고, 함수의 작업이 완료되면 메모리에서 제거가 됩니다.</p>
+
+<p>하지만, 지역변수를 계속 남겨두어야 하는 경우가 있습니다.</p>
+
+<p>이때, 클로저 함수를 사용합니다. 클로저는 지역변수를 삭제하지 않고 남겨 두게 됩니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="err">함수명</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kd">var</span> <span class="err">변수</span><span class="p">;</span>
+    <span class="kd">function</span> <span class="err">클로저</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="err">변수사용</span> <span class="err">및</span> <span class="err">처리</span>
+
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="err">클로저</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="클로저-현상">클로저 현상</h3>
+<p>참조되는 메모리가 물려있을 경우, 사라지지 않는 현상.</p>
+
+
+            </section>
+
+            <div class="container">
+                <!--구글 애드센스1-->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-format="fluid"
+                    data-ad-layout-key="-fb+5w+4e-db+86"
+                    data-ad-client="ca-pub-3321560028329475"
+                    data-ad-slot="6043271504"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <br>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><!--사이드메뉴1-->
+<ul class="list-group">
+    <li class="list-group-item"><a href="/setup">준비 작업</a></li>
+</ul>
+<br>
+<ul class="list-group">
+    <li class="list-group-item">기본강좌</li>
+    <li class="list-group-item"><a href="/es5">ES5 </a></li>
+    <li class="list-group-item"><a href="/es6">ES6</a></li>
+    <li class="list-group-item"><a href="/typescript">TypeScript</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">중급강좌</li>
+    <li class="list-group-item"><a href="/dom">DOM </a></li>
+    <li class="list-group-item"><a href="/api">API</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">고급강좌</li>
+    <li class="list-group-item"><a href="/jquery">Jquery </a></li>
+    <li class="list-group-item"><a href="/vuejs">VueJS</a></li>
+    <li class="list-group-item"><a href="/React">React</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">서버강좌</li>
+    <li class="list-group-item"><a href="/nodejs">nodeJS</a></li>
+    <li class="list-group-item"><a href="/deno">Deno</a></li>
+    <li class="list-group-item"><a href="/serverless">ServerLess</a></li>
+</ul>
+<br>
+
+</aside>
+            <br>
+            
+            <!--구글 애드센스2-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-ef+6k-30-ac+ty"
+                data-ad-client="ca-pub-3321560028329475"
+                data-ad-slot="7661682925"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+        <div class="container"> <!-- Footer -->
+ <hr>
+<footer>
+    <div class="container">
+		
+    	<div class="row">
+        	<div class="col-4">
+				<li><a href="https://php.jiny.dev">PHP</a></li>
+				<li><a href="https://mysql.jiny.dev">Mysql</a></li>
+			</div>
+			<div class="col-4">
+				<li><a href="https://HTML5.jiny.dev">HTML5</a></li>
+					<li><a href="https://javascript.jiny.dev">Javascript</a></li>
+			</div>
+
+			<div class="col-4">
+				<ul>			
+					<li><a href="https://git.jiny.dev">Git & Github</a></li>
+				</ul>
+			</div>
+    	</div>
+	</div>
+	<br>
+
+	<p class="m-0 text-center">Copyright &copy; jinydev 2020</p>
+	
+    <!-- /.container -->
+</footer></div>
+             
+
+        <!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159909206-1');
+        </script>
+    </body>
+
+</html>

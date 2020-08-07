@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>Javascript | javascript</title>
+            <meta name="title" content="javascript" /><meta name="description" content="javascript를 학습합니다." /><meta name="keyword" content="javascript" /><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            body {
+                font-family: "Nanum Gothic", sans-serif;
+            }
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        
+
+    </head>
+    <body>
+        <!--네비게이션--><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/setup">개발환경
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+        <div class="container"><nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <!--breadcrumb loop--></ol>    
+</nav></div>
+        
+        <!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <section>
+                <h1 id="함수의-실행">함수의 실행</h1>
+<hr />
+
+<h3 id="함수호출">함수호출</h3>
+<hr />
+<p>함수 식별자와 <code class="highlighter-rouge">()</code>를 통하여 함수를 호출합니다.
+<code class="highlighter-rouge">()</code>는 함수로 전달되는 매개값을 입력합니다. 없으면 공백으로 처리합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">함수명</span><span class="p">();</span>
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 함수를 선언합니다.</span>
+<span class="kd">function</span> <span class="nx">greeting</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">안녕하세요</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 함수를 실행합니다.</span>
+<span class="nx">greeting</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_01.js
+안녕하세요
+</code></pre></div></div>
+
+<h3 id="함수-객체">함수 객체</h3>
+<hr />
+<p>아직 객체라는 용어가 생소할 수 있습니다. 자바스크립트는 특이하게도 함수를 객체로 처리를 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">greeting</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>함수뒤에 <code class="highlighter-rouge">()</code>를 붙이지 않으면, 함수의 실행이 되지 않습니다.</p>
+
+<p>함수의 참조하는 값으로 표현이 됩니다. 참조값은 다른 변수로 저장을 할 수도 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 함수를 선언합니다.</span>
+<span class="kd">function</span> <span class="nx">greeting</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">안녕하세요</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 참조값을 복사합니다.</span>
+<span class="kd">const</span> <span class="nx">f</span> <span class="o">=</span> <span class="nx">greeting</span><span class="p">;</span>
+
+<span class="c1">// 함수를 실행합니다.</span>
+<span class="nx">f</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p>함수의 호출과 참조는 괄호(<code class="highlighter-rouge">()</code>)를 통하여 구분이 되는 것을 알 수 있습니다. 또한 <code class="highlighter-rouge">()</code>의 역활을 명확히 알 수 있습니다.</p>
+
+            </section>
+
+            <div class="container">
+                <!--구글 애드센스1-->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-format="fluid"
+                    data-ad-layout-key="-fb+5w+4e-db+86"
+                    data-ad-client="ca-pub-3321560028329475"
+                    data-ad-slot="6043271504"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <br>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><!--사이드메뉴1-->
+<ul class="list-group">
+    <li class="list-group-item"><a href="/setup">준비 작업</a></li>
+</ul>
+<br>
+<ul class="list-group">
+    <li class="list-group-item">기본강좌</li>
+    <li class="list-group-item"><a href="/es5">ES5 </a></li>
+    <li class="list-group-item"><a href="/es6">ES6</a></li>
+    <li class="list-group-item"><a href="/typescript">TypeScript</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">중급강좌</li>
+    <li class="list-group-item"><a href="/dom">DOM </a></li>
+    <li class="list-group-item"><a href="/api">API</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">고급강좌</li>
+    <li class="list-group-item"><a href="/jquery">Jquery </a></li>
+    <li class="list-group-item"><a href="/vuejs">VueJS</a></li>
+    <li class="list-group-item"><a href="/React">React</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">서버강좌</li>
+    <li class="list-group-item"><a href="/nodejs">nodeJS</a></li>
+    <li class="list-group-item"><a href="/deno">Deno</a></li>
+    <li class="list-group-item"><a href="/serverless">ServerLess</a></li>
+</ul>
+<br>
+
+</aside>
+            <br>
+            
+            <!--구글 애드센스2-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-ef+6k-30-ac+ty"
+                data-ad-client="ca-pub-3321560028329475"
+                data-ad-slot="7661682925"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+        <div class="container"> <!-- Footer -->
+ <hr>
+<footer>
+    <div class="container">
+		
+    	<div class="row">
+        	<div class="col-4">
+				<li><a href="https://php.jiny.dev">PHP</a></li>
+				<li><a href="https://mysql.jiny.dev">Mysql</a></li>
+			</div>
+			<div class="col-4">
+				<li><a href="https://HTML5.jiny.dev">HTML5</a></li>
+					<li><a href="https://javascript.jiny.dev">Javascript</a></li>
+			</div>
+
+			<div class="col-4">
+				<ul>			
+					<li><a href="https://git.jiny.dev">Git & Github</a></li>
+				</ul>
+			</div>
+    	</div>
+	</div>
+	<br>
+
+	<p class="m-0 text-center">Copyright &copy; jinydev 2020</p>
+	
+    <!-- /.container -->
+</footer></div>
+             
+
+        <!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159909206-1');
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>Javascript | javascript</title>
+            <meta name="title" content="javascript" /><meta name="description" content="javascript를 학습합니다." /><meta name="keyword" content="javascript" /><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            body {
+                font-family: "Nanum Gothic", sans-serif;
+            }
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        
+
+    </head>
+    <body>
+        <!--네비게이션--><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/setup">개발환경
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+        <div class="container"><nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <!--breadcrumb loop--></ol>    
+</nav></div>
+        
+        <!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <section>
+                <h1 id="헬로우-월드">헬로우 월드</h1>
+<hr />
+<p>대부분의 프로그램의 언어를 학습을 할때 <code class="highlighter-rouge">hello world</code>를 출력합니다.
+자바스크립트로 <code class="highlighter-rouge">hello world</code>를 출력하는 코드를 작성합니다.</p>
+
+<h2 id="헬로우-유래">헬로우 유래</h2>
+<hr />
+<p><code class="highlighter-rouge">hello world</code>는 1972년 브라이언 커니핸(brian kemighan)이 벨 연수소에서 최초로 통신 메시지로 사용을 한것으로 알려져 있습니다.</p>
+
+<p>모든 프로그램의 언어의 시작에서는 간단한 프로그램의 동작을 확인하기 위해서 <code class="highlighter-rouge">hello world</code>를 출력하는 프로그램을 먼저 사용을 합니다.</p>
+
+<h2 id="실행">실행</h2>
+<hr />
+<p>자바스크립트는 브라우저에서 해석되고 실행이 되는 인터프리어 언어 입니다.
+자신의 컴퓨터에 브라우져만 설치되어 있으면 언제든지 자바스크립트 코드를 작성하고, 실행을 할 수 있습니다.</p>
+
+<h2 id="html">html</h2>
+<hr />
+<p>자바스크립트는 브라우저에서 해석 실행이 되기 때문에, html 문서와 많은 상관이 있습니다. 즉, 자바스크립트의 코드는 html 문서안에 작성을 합니다.</p>
+
+<p>다음은 html의 기본 구조 입니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>html 문서에 자바스크립트 코드를 작성하기 위해서는 <code class="highlighter-rouge">&lt;script&gt;...&lt;/script&gt;</code>테그를 같이 작서을 해주어야 합니다.</p>
+
+<h2 id="코드작성">코드작성</h2>
+<hr />
+<p>브라우저로 화면을 출력할 수 있는 자바스크립트 코드를 추가해 보도록 합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>브라우저로 확인을 합니다.</p>
+
+<p><img src="./img/hello_01.png" alt="헬로우월드" /></p>
+
+<p>브라우저가 html문서를 읽고 해석할때, 자바스크립트 코드도 같이 해석하여 실행을 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">document.write()</code>는 html의 body영역에 내용을 출력합니다.</p>
+
+
+            </section>
+
+            <div class="container">
+                <!--구글 애드센스1-->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-format="fluid"
+                    data-ad-layout-key="-fb+5w+4e-db+86"
+                    data-ad-client="ca-pub-3321560028329475"
+                    data-ad-slot="6043271504"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <br>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><!--사이드메뉴1-->
+<ul class="list-group">
+    <li class="list-group-item"><a href="/setup">준비 작업</a></li>
+</ul>
+<br>
+<ul class="list-group">
+    <li class="list-group-item">기본강좌</li>
+    <li class="list-group-item"><a href="/es5">ES5 </a></li>
+    <li class="list-group-item"><a href="/es6">ES6</a></li>
+    <li class="list-group-item"><a href="/typescript">TypeScript</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">중급강좌</li>
+    <li class="list-group-item"><a href="/dom">DOM </a></li>
+    <li class="list-group-item"><a href="/api">API</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">고급강좌</li>
+    <li class="list-group-item"><a href="/jquery">Jquery </a></li>
+    <li class="list-group-item"><a href="/vuejs">VueJS</a></li>
+    <li class="list-group-item"><a href="/React">React</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">서버강좌</li>
+    <li class="list-group-item"><a href="/nodejs">nodeJS</a></li>
+    <li class="list-group-item"><a href="/deno">Deno</a></li>
+    <li class="list-group-item"><a href="/serverless">ServerLess</a></li>
+</ul>
+<br>
+
+</aside>
+            <br>
+            
+            <!--구글 애드센스2-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-ef+6k-30-ac+ty"
+                data-ad-client="ca-pub-3321560028329475"
+                data-ad-slot="7661682925"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+        <div class="container"> <!-- Footer -->
+ <hr>
+<footer>
+    <div class="container">
+		
+    	<div class="row">
+        	<div class="col-4">
+				<li><a href="https://php.jiny.dev">PHP</a></li>
+				<li><a href="https://mysql.jiny.dev">Mysql</a></li>
+			</div>
+			<div class="col-4">
+				<li><a href="https://HTML5.jiny.dev">HTML5</a></li>
+					<li><a href="https://javascript.jiny.dev">Javascript</a></li>
+			</div>
+
+			<div class="col-4">
+				<ul>			
+					<li><a href="https://git.jiny.dev">Git & Github</a></li>
+				</ul>
+			</div>
+    	</div>
+	</div>
+	<br>
+
+	<p class="m-0 text-center">Copyright &copy; jinydev 2020</p>
+	
+    <!-- /.container -->
+</footer></div>
+             
+
+        <!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159909206-1');
+        </script>
+    </body>
+
+</html>

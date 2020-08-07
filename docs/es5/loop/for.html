@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--SEO--><title>Javascript | javascript</title>
+            <meta name="title" content="javascript" /><meta name="description" content="javascript를 학습합니다." /><meta name="keyword" content="javascript" /><!--부트스트랩4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            body {
+                font-family: "Nanum Gothic", sans-serif;
+            }
+            img {
+                max-width:100%;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/assets/highlight.css">
+        <link rel="stylesheet" href="/assets/style.css">
+        
+
+    </head>
+    <body>
+        <!--네비게이션--><!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/">Javascript</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/setup">개발환경
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+        <div class="container"><nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <!--breadcrumb loop--></ol>    
+</nav></div>
+        
+        <!-- Page Content -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-9">
+            <section>
+                <h1 id="for-반복문">for 반복문</h1>
+<p>횟수를 지정하여 코드를 반복 실행 동작을 구현합니다.</p>
+
+<h2 id="반복의-필요성">반복의 필요성</h2>
+<p>반복문은 수많은 프로그램의 동작을 간단하게 처리하는 동작입니다. 예를 들어 다음과 같이 <code class="highlighter-rouge">hello world</code>를 5번 출력을 할려고 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world!</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world!</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world!</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world!</span><span class="dl">"</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world!</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>5번의 <code class="highlighter-rouge">hello world</code>를 출력하기 위해서 5개의 <code class="highlighter-rouge">console.log()</code> 명령이 필요로 합니다.</p>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node for_01.js
+hello world!
+hello world!
+hello world!
+hello world!
+hello world!
+</code></pre></div></div>
+
+<h2 id="for">for</h2>
+<p>자바스크립트는 대표적인 반복문인 for를 지원합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="err">초기값</span><span class="p">;</span> <span class="err">조건식</span><span class="p">;</span> <span class="err">증가</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 반복문장</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>for는 3개인 인수값을 전달 합니다. 각각의 인수값은 세미콜론(;)으로 구분을 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="o">+</span> <span class="dl">"</span><span class="s2"> 안녕하세요!</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>중괄호로 묶여진 특정 영역을 반복하여 실행을 합니다. 한개의 <code class="highlighter-rouge">console.log()</code> 명령을 5번 반복 수행을 합니다.</p>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node for_02.js
+0 안녕하세요!
+1 안녕하세요!
+2 안녕하세요!
+3 안녕하세요!
+4 안녕하세요!
+</code></pre></div></div>
+
+<h3 id="초기값">초기값</h3>
+<p>반복문에서의 초기값은 한번만 실행이 됩니다.</p>
+
+<h3 id="조건식">조건식</h3>
+
+<h3 id="증감">증감</h3>
+
+<hr />
+
+<h2 id="다중-반복문">다중 반복문</h2>
+<p>for 반복문은 다른 for 반복문을 포함할 수 있습니다. 이를 다중 반복문이라고 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="err">초기값</span><span class="mi">1</span><span class="p">;</span> <span class="err">조건식</span><span class="mi">1</span><span class="p">;</span> <span class="err">증가</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 반복문장1</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="err">초기값</span><span class="mi">2</span><span class="p">;</span> <span class="err">조건식</span><span class="mi">2</span><span class="p">;</span> <span class="err">증가</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 반복문장2</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>다중 반복문을 설계할 때에는 상위 반복문의 조건과 하위 반복의 조건이 충돌이 되지 않도록 해야 합니다.</p>
+
+<h2 id="실습1">실습1</h2>
+<p>별표 출력하기</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">star</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">j</span><span class="o">&lt;</span><span class="nx">i</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">){</span>
+        <span class="nx">star</span> <span class="o">+=</span> <span class="dl">"</span><span class="s2">*</span><span class="dl">"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">star</span><span class="p">);</span> <span class="c1">// 화면출력</span>
+    <span class="nx">star</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span> <span class="c1">// 초기화</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node for_03.js
+undefined
+*
+**
+***
+****
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="for-in">for-in</h2>
+<p><code class="highlighter-rouge">for-in</code>은 for 반복문과 달리 주어진 객체의 프로퍼티를 반복을 수행합니다.</p>
+
+<p>요수를 순회합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">fruits</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">banana</span><span class="p">:</span><span class="dl">"</span><span class="s2">바나나</span><span class="dl">"</span><span class="p">,</span> 
+    <span class="na">apple</span><span class="p">:</span><span class="dl">"</span><span class="s2">사과</span><span class="dl">"</span><span class="p">,</span> 
+    <span class="na">kiwi</span><span class="p">:</span><span class="dl">"</span><span class="s2">키위</span><span class="dl">"</span>
+<span class="p">};</span>
+
+<span class="k">for</span> <span class="p">(</span> <span class="kd">var</span> <span class="nx">item</span> <span class="k">in</span> <span class="nx">fruits</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">item</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">는 </span><span class="dl">'</span><span class="o">+</span> <span class="nx">fruits</span><span class="p">[</span><span class="nx">item</span><span class="p">])</span> <span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>실행결과</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node forin_01.js
+banana는 바나나
+apple는 사과
+kiwi는 키위
+
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="for-of">for-of</h2>
+<p><code class="highlighter-rouge">for of</code> 반복문은 es6에서 새롭게 추가된 반복문 입니다.
+컬렉션의 요소를 반복실행 합니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span> <span class="nx">variable</span> <span class="k">of</span> <span class="nx">object</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// 실행코드</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>for-of 반복문은 범용적인 루프 입니다.
+배열, 이터러블(iterable) 객체 모두 사용이 가능합니다.</p>
+
+
+            </section>
+
+            <div class="container">
+                <!--구글 애드센스1-->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-format="fluid"
+                    data-ad-layout-key="-fb+5w+4e-db+86"
+                    data-ad-client="ca-pub-3321560028329475"
+                    data-ad-slot="6043271504"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                <br>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <aside><!--사이드메뉴1-->
+<ul class="list-group">
+    <li class="list-group-item"><a href="/setup">준비 작업</a></li>
+</ul>
+<br>
+<ul class="list-group">
+    <li class="list-group-item">기본강좌</li>
+    <li class="list-group-item"><a href="/es5">ES5 </a></li>
+    <li class="list-group-item"><a href="/es6">ES6</a></li>
+    <li class="list-group-item"><a href="/typescript">TypeScript</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">중급강좌</li>
+    <li class="list-group-item"><a href="/dom">DOM </a></li>
+    <li class="list-group-item"><a href="/api">API</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">고급강좌</li>
+    <li class="list-group-item"><a href="/jquery">Jquery </a></li>
+    <li class="list-group-item"><a href="/vuejs">VueJS</a></li>
+    <li class="list-group-item"><a href="/React">React</a></li>
+</ul>
+<br>
+
+<ul class="list-group">
+    <li class="list-group-item">서버강좌</li>
+    <li class="list-group-item"><a href="/nodejs">nodeJS</a></li>
+    <li class="list-group-item"><a href="/deno">Deno</a></li>
+    <li class="list-group-item"><a href="/serverless">ServerLess</a></li>
+</ul>
+<br>
+
+</aside>
+            <br>
+            
+            <!--구글 애드센스2-->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-format="fluid"
+                data-ad-layout-key="-ef+6k-30-ac+ty"
+                data-ad-client="ca-pub-3321560028329475"
+                data-ad-slot="7661682925"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+
+        <div class="container"> <!-- Footer -->
+ <hr>
+<footer>
+    <div class="container">
+		
+    	<div class="row">
+        	<div class="col-4">
+				<li><a href="https://php.jiny.dev">PHP</a></li>
+				<li><a href="https://mysql.jiny.dev">Mysql</a></li>
+			</div>
+			<div class="col-4">
+				<li><a href="https://HTML5.jiny.dev">HTML5</a></li>
+					<li><a href="https://javascript.jiny.dev">Javascript</a></li>
+			</div>
+
+			<div class="col-4">
+				<ul>			
+					<li><a href="https://git.jiny.dev">Git & Github</a></li>
+				</ul>
+			</div>
+    	</div>
+	</div>
+	<br>
+
+	<p class="m-0 text-center">Copyright &copy; jinydev 2020</p>
+	
+    <!-- /.container -->
+</footer></div>
+             
+
+        <!--부트스트랩4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159909206-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-159909206-1');
+        </script>
+    </body>
+
+</html>
