@@ -1,12 +1,16 @@
 ---
 layout: home
+
 title: "javascript"
 keyword: "javascript"
 description: "javascript를 학습합니다."
+
 breadcrumb:
     - "Basic"
     - "Variable"
 ---
+
+* [문자열 다루기](string)
 
 <jiny-book-mark>변수</jiny-book-mark>
 

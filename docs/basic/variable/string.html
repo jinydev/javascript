@@ -167,43 +167,17 @@
 		
 		<!-- Content -->
 		<div class="docs-content mx-xxl-9">
-			<p>https://www.youtube.com/watch?v=kIGQQMq_TBE&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=25</p>
+			<h1 id="문자열-처리하기">문자열 처리하기</h1>
+<p>자바스크립트의 문자열을 다룰수 있는 다양한 함수들에 대해서 알아 보도록 합니다.</p>
 
-<h1 id="노드선택">노드선택</h1>
+<h2 id="문자열-마지막-글자-제거하기">문자열 마지막 글자 제거하기</h2>
+<p>자르기 함수를 이용하여 문자열의 마지막 글자를 제거합니다.</p>
 
-<p>자바스크립트로 html의 dom 요소를 선택하기 위해서는 id를 설정해 주어야 합니다.</p>
-
-<p>하지만, 모든 요소에게 고유한 아이디를 부여할 수를 없습니다.</p>
-
-<h2 id="상대적-선택">상대적 선택</h2>
-<p>특정 기준점을 가지는 id를 이용하여 상대적인 요소를 찾습니다.</p>
-
-<p>getElementsByTagName()
-배열값으로 지정한 요소의 테그 요소를 반환 합니다.</p>
-
-<p>getElementsByClassName()
-지정한 클래스가 설정된 모든 요소를 <code class="language-plaintext highlighter-rouge">배열</code>값으로 반환을 합니다.</p>
-
-<p>반환값이 배열이기 때문에 요소에 접근을 하기 위해서는 반드시 <code class="language-plaintext highlighter-rouge">[]</code>로 선택해야 합니다.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>요소.textContent = "내용"
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">str</span><span class="o">=</span><span class="dl">"</span><span class="s2">hello world!.</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">));</span>
 </code></pre></div></div>
 
-<p>웹표준에서 감싸고 있는 요소의 내용을 변경할때 textContent 를 사용합니다. 이는 innerText와 동일한 기능을 합니다.
-innerText는 MS에서 개발 지원을 하였으나, 현재는 모든 브라우져들이 채택되어 지원을 하고 있는 상태 입니다.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">section</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">"</span><span class="s2">input</span><span class="dl">"</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">email</span> <span class="o">=</span> <span class="nx">section</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-</code></pre></div></div>
-
-<p>테그명을 추출한 요소안에서, 서브로 포함하고 있는 요소들을 선택할 수 있습니다.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">section</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">"</span><span class="s2">input</span><span class="dl">"</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">email</span> <span class="o">=</span> <span class="nx">section</span><span class="p">.</span><span class="nx">getElementsByClassName</span><span class="p">(</span><span class="dl">"</span><span class="s2">email</span><span class="dl">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
-</code></pre></div></div>
-
-<p>선택한 요소안에서만 존재하는 클래스 요소들을 제한적으로 검색할 수도 있습니다.
-클래스명을 이용한 검색도 배열로 반환이 되기 때문에 <code class="language-plaintext highlighter-rouge">[]</code>를 붙여서 사용을 해야 합니다.</p>
+<p><code class="language-plaintext highlighter-rouge">slice()</code>함수를 이용하여 문자열 자르기를 합니다. <code class="language-plaintext highlighter-rouge">-1</code>을 입력하면 뒤에서 부터 한글자를 잘라 내게 됩니다.</p>
 
 
 		</div>
