@@ -1,10 +1,10 @@
-I"�<h1 id="스크립트-위치">스크립트 위치</h1>
+I"?	<h1 id="스크립트-위치">스크립트 위치</h1>
 <hr />
-<p>html 문서는 크게 <code class="highlighter-rouge">head</code> 영역과 <code class="highlighter-rouge">body</code> 영역으로 구분이 됩니다.</p>
+<p>html 문서는 크게 <code class="language-plaintext highlighter-rouge">head</code> 영역과 <code class="language-plaintext highlighter-rouge">body</code> 영역으로 구분이 됩니다.</p>
 
 <h2 id="head-영역">head 영역</h2>
 <hr />
-<p>html에서 자바스크립트의 기본 위치는 <code class="highlighter-rouge">&lt;head&gt;&lt;/head&gt;</code> 테그 안에 선언을 합니다.</p>
+<p>html에서 자바스크립트의 기본 위치는 <code class="language-plaintext highlighter-rouge">&lt;head&gt;&lt;/head&gt;</code> 테그 안에 선언을 합니다.</p>
 
 <p>브라우저는 html의 문서는 첫줄부터 순차적으로 해석을 시도 합니다. head 테그는 body 테그보다 앞에 위치하고 있습니다.
 즉, body 테그가 해석되어 화면에 출력하기 전에 head 테그 안에 있는 자바스크립트 코드가 먼저 실행이 됩니다.</p>
@@ -17,7 +17,7 @@
 
 <p>자바스크립트가 body 요소의 일부를 제어를 하려고 할때 아직 브라우저가 해석이 되지 않은 상태에서 먼저 자바스크립트 코드가 실행이 될 수도 있습니다.</p>
 
-<p>이러한 문제점을 해결하기 위해서 최근에는 자바스크립트 코드를 바디의 종료테그(<code class="highlighter-rouge">&lt;/body&gt;</code>)앞에 작성을 하는 경우가 많습니다.</p>
+<p>이러한 문제점을 해결하기 위해서 최근에는 자바스크립트 코드를 바디의 종료테그(<code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code>)앞에 작성을 하는 경우가 많습니다.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>

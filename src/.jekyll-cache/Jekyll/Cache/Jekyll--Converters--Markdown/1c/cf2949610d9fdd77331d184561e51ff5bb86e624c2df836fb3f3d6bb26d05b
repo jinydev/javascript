@@ -1,4 +1,4 @@
-I" <p>https://www.youtube.com/watch?v=IQnm8rBSxWs&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=22</p>
+I" <p>https://www.youtube.com/watch?v=IQnm8rBSxWs&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=22</p>
 
 <h2 id="지역화">지역화</h2>
 
@@ -36,7 +36,7 @@
     <span class="c1">// 익명함수는 별도의 함수 이름이 필요 없습니다.</span>
     <span class="nx">btnHello</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span>
     <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">btnHello</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn-hello</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// </span><span class="o">&lt;==</span> <span class="err">생략가능</span>
+        <span class="kd">var</span> <span class="nx">btnHello</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn-hello</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// </span><span class="o">&lt;==</span> <span class="nx">생략가능</span>
         <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="dl">"</span><span class="s2">누구세요</span><span class="dl">"</span><span class="p">);</span>
         <span class="nx">alert</span><span class="p">(</span><span class="nx">name</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">님 반갑습니다.</span><span class="dl">"</span><span class="p">);</span>
         <span class="nx">btnHello</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
@@ -64,7 +64,7 @@
     <span class="c1">// 익명함수는 별도의 함수 이름이 필요 없습니다.</span>
     <span class="nx">btnHello</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span>
     <span class="p">{</span>
-        <span class="kd">var</span> <span class="nx">btnHello</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn-hello</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// </span><span class="o">&lt;==</span> <span class="err">생략가능</span>
+        <span class="kd">var</span> <span class="nx">btnHello</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn-hello</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// </span><span class="o">&lt;==</span> <span class="nx">생략가능</span>
         <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="dl">"</span><span class="s2">누구세요</span><span class="dl">"</span><span class="p">);</span>
         <span class="nx">alert</span><span class="p">(</span><span class="nx">name</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">님 반갑습니다.</span><span class="dl">"</span><span class="p">);</span>
         <span class="nx">btnHello</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>

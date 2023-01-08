@@ -1,4 +1,4 @@
-I"�<h1 id="매개변수">매개변수</h1>
+I"=<h1 id="매개변수">매개변수</h1>
 <p>매개변수는 함수에서 입력값을 전달받는 부분을 말합니다.
 입력값은 여러개가 존재할 수 있습니다. 콤마로 구분을 합니다.</p>
 
@@ -6,13 +6,13 @@
 
 <h2 id="지역변수">지역변수</h2>
 <p>매개변수는 지역변수 입니다.
-함수에서 매개변수를 지정할때, 타입을 지정하는 <code class="highlighter-rouge">var</code>를 사용하지 않습니다.</p>
+함수에서 매개변수를 지정할때, 타입을 지정하는 <code class="language-plaintext highlighter-rouge">var</code>를 사용하지 않습니다.</p>
 
 <h2 id="매개변수-1">매개변수</h2>
 <p>함수의 반환값에 대해서 알아 보았습니다. 반대로 함수에게 값을 전달을 할 수 있습니다.<br />
 이를 매개변수라고 합니다.</p>
 
-<p>매개 변수는 함수의 괄호 <code class="highlighter-rouge">()</code>안에 값을 넣어주면 됩니다.</p>
+<p>매개 변수는 함수의 괄호 <code class="language-plaintext highlighter-rouge">()</code>안에 값을 넣어주면 됩니다.</p>
 
 <h3 id="매개변수-지정">매개변수 지정</h3>
 <p>함수에서 매개변수를 사용하기 위해서는 전달되는 값과 받은 값이 동일하여야 합니다.</p>
@@ -30,10 +30,10 @@
 
 <p>함수를 선언을 할때 전달 받을 매개변수 명을 같이 선언을 합니다. 또한 함수를 호출할때 인자값을 같이 입력을 합니다.</p>
 
-<p>함수에서 받아드리는 값을 <code class="highlighter-rouge">매개변수</code>라고 하고, 함수를 호출할때 전달하는 값을 <code class="highlighter-rouge">인자값</code>이라고 합니다.</p>
+<p>함수에서 받아드리는 값을 <code class="language-plaintext highlighter-rouge">매개변수</code>라고 하고, 함수를 호출할때 전달하는 값을 <code class="language-plaintext highlighter-rouge">인자값</code>이라고 합니다.</p>
 
 <p>결과확인</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_04.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_04.js
 안녕하세요!!!
 </code></pre></div></div>
 
@@ -53,7 +53,7 @@
 </code></pre></div></div>
 
 <p>실행결과</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_05.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node function_05.js
 undefined!!!
 </code></pre></div></div>
 
@@ -88,7 +88,7 @@ undefined!!!
 <p>함수에서 전달받을 매개변수 지정을 생략하여 함수를 작성할 수 있습니다. 이때, 메개변수 값을 같이 전달 하게 되면
 지정되어 있는 매개 변수명이 없어서 값을 확인 할 수 없습니다.</p>
 
-<p>이때, 자바스크립트의 내부객체 <code class="highlighter-rouge">arguments</code>를 사용할 수 있습니다.</p>
+<p>이때, 자바스크립트의 내부객체 <code class="language-plaintext highlighter-rouge">arguments</code>를 사용할 수 있습니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">hello</span><span class="p">(){</span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span><span class="nx">arguments</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
@@ -100,7 +100,7 @@ undefined!!!
 </code></pre></div></div>
 
 <p>실행결과</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node param_10.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node param_10.js
 안녕하세요
 오늘도 좋은 하루 되세요
 </code></pre></div></div>

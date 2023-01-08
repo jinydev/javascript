@@ -1,0 +1,94 @@
+<ul class="navbar-nav flex-column" id="sidebarnav">
+    {% for nav in site.data.side %}
+        {%- if nav.header == "true" -%}
+        <li class="navbar-header">
+            <h5 class="heading">{{nav.title}}</h5>
+        </li>
+        {% elsif nav.title == "---" %}
+        <li>
+            <div class="navbar-border"></div>
+        </li>
+        {%- else -%}
+        <li class="nav-item">
+            <a href="{{nav.href}}" class="nav-link">{{nav.title}}</a>
+        </li>            
+        {%- endif -%}    
+    {% endfor %}
+
+    <!-- Getting Started -->
+    <li class="navbar-header">
+        <h5 class="heading">시작하기 전에</h5>
+    </li>
+    <li class="nav-item">
+        <a href="/setup" class="nav-link">설정</a>
+    </li>
+    <li class="nav-item">
+        <a href="/javascript" class="nav-link">자바스크립트란?</a>
+    </li>
+  
+    <li>
+    <div class="navbar-border"></div>
+    </li>
+
+    <!-- Getting Started -->
+    <li class="navbar-header">
+      <h5 class="heading">기본학습</h5>
+    </li>
+    <li class="nav-item">
+        <a href="/basic" class="nav-link">기본문법</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/variable" class="nav-link">변수상수</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/condition" class="nav-link">제어문</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/loop" class="nav-link">반복문</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/es5" class="nav-link">ES5</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/es6" class="nav-link">ES6</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/lecture" class="nav-link">웅용</a>
+    </li>
+
+    <li>
+      <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">브라우저 및 DOM</h5>
+    </li>
+    <li class="nav-item">
+        <a href="dom" class="nav-link">DOM</a>
+    </li>
+    <li class="nav-item">
+        <a href="api" class="nav-link">API</a>
+    </li>
+
+    <li>
+        <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">Node&Express</h5>
+    </li>
+    <li class="nav-item">
+        <a href="node" class="nav-link">node</a>
+    </li>
+
+    <li>
+        <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">Jquery</h5>
+    </li>
+    <li class="nav-item">
+        <a href="jquery" class="nav-link">jquery</a>
+    </li>
+</ul>

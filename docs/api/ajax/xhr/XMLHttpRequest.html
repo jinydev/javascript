@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Geeks is a fully responsive and yet modern premium bootstrap 5 template & snippets. Geek is feature-rich components and beautifully designed pages that help you create the best possible website and web application projects. Bootstrap Snippet " />
+		<meta name="keywords" content="Geeks UI, bootstrap, bootstrap 5, Course, Sass, landing, Marketing, admin themes, bootstrap admin, bootstrap dashboard, ui kit, web app, dash ui, admin dashboard, HTML5, multipurpose" />
+
+
+
+
+		<!-- Favicon icon-->
+		<link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
+
+
+		<!-- Libs CSS -->
+		<link href="/assets/fonts/feather/feather.css" rel="stylesheet">
+		<link href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+		<link href="/assets/libs/dragula/dist/dragula.min.css" rel="stylesheet" />
+		<link href="/assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+		<link href="/assets/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
+		<link href="/assets/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+		<link href="/assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+		<link href="/assets/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet">
+		<link href="/assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+		<link href="/assets/libs/tippy.js/dist/tippy.css" rel="stylesheet">
+		<link href="/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+		<link href="/assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+		<link href="/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+		<link href="/assets/libs/nouislider/dist/nouislider.min.css" rel="stylesheet">
+		<link href="/assets/libs/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="/assets/css/theme.min.css">
+		
+
+		<!--SEO--><title>Javascript | XMLHttpRequest</title>
+            <meta name="title" content="XMLHttpRequest" /><meta name="description" content="자바스크립트의 XMLHttpRequest를 통한 통신방법에 대해서 학습합니다." /><meta name="keyword" content="XMLHttpRequest, ajax, javascript" /></head>
+
+<body class="bg-white">
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    <!-- Docs header --><div class="docs-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ms-0">
+         <a class="navbar-brand" href="/">
+            지니데브-Javascript
+         </a>
+
+         <ul class="navbar-nav ms-auto flex-row">
+            <li class="nav-item docs-header-btn">
+               <a target="_blank" href="">Github</a>
+            </li>
+
+            <li class="nav-item d-md-none">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+            </li>
+         </ul>
+
+    </nav>
+</div><!-- left sidebar -->
+	<!-- Nav Sidebar -->
+	<div class="docs-nav-sidebar">
+		<div class="py-5"></div>
+		<div class=" docs-nav " data-simplebar>
+			<nav class="navbar navbar-expand-md">
+			<div class="collapse navbar-collapse " id="navbarNav"><ul class="navbar-nav flex-column" id="sidebarnav">
+    <li class="navbar-header">
+            <h5 class="heading">시작하기전에</h5>
+        </li>
+        <li class="nav-item">
+            <a href="/setup" class="nav-link">설정</a>
+        </li><li class="nav-item">
+            <a href="/javascript" class="nav-link">자바스크립트란?</a>
+        </li>
+        <li>
+            <div class="navbar-border"></div>
+        </li>
+
+    <!-- Getting Started -->
+    <li class="navbar-header">
+        <h5 class="heading">시작하기 전에</h5>
+    </li>
+    <li class="nav-item">
+        <a href="/setup" class="nav-link">설정</a>
+    </li>
+    <li class="nav-item">
+        <a href="/javascript" class="nav-link">자바스크립트란?</a>
+    </li>
+  
+    <li>
+    <div class="navbar-border"></div>
+    </li>
+
+    <!-- Getting Started -->
+    <li class="navbar-header">
+      <h5 class="heading">기본학습</h5>
+    </li>
+    <li class="nav-item">
+        <a href="/basic" class="nav-link">기본문법</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/variable" class="nav-link">변수상수</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/condition" class="nav-link">제어문</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/loop" class="nav-link">반복문</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/es5" class="nav-link">ES5</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/es6" class="nav-link">ES6</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/lecture" class="nav-link">웅용</a>
+    </li>
+
+    <li>
+      <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">브라우저 및 DOM</h5>
+    </li>
+    <li class="nav-item">
+        <a href="dom" class="nav-link">DOM</a>
+    </li>
+    <li class="nav-item">
+        <a href="api" class="nav-link">API</a>
+    </li>
+
+    <li>
+        <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">Node&Express</h5>
+    </li>
+    <li class="nav-item">
+        <a href="node" class="nav-link">node</a>
+    </li>
+
+    <li>
+        <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">Jquery</h5>
+    </li>
+    <li class="nav-item">
+        <a href="jquery" class="nav-link">jquery</a>
+    </li>
+</ul></div>
+			</nav>
+		</div>
+		<div class="nav-footer">
+			<p class="mb-0"> Developed by JinyDev</p>
+		</div>
+	</div>
+
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+    <div class="col-xl-10 col-md-12 col-sm-12 col-12 ">
+		<!-- Breadcrumb -->
+		<nav aria-label="breadcrumb" style="margin-top: 50px; padding: 0 10px 0 10px;">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">Home</a></li>
+				<!--breadcrumb loop--></ol>    
+		</nav>
+		
+		<!-- Content -->
+		<div class="docs-content mx-xxl-9">
+			<h1 id="xmlhttprequest">XMLHttpRequest</h1>
+<hr />
+<p>XMLHttpRequest는 클라이언트 브라우저와 서버간 데이터를 통신하는 객체입니다. 이 객체는 자바스크립트에 의해서 제공하고 주로 API 통신으로 많이 사용합니다.</p>
+
+<p>XMLHttpRequest 객체는 마이크로소프트에서 만들어 졌습니다.</p>
+
+<p>XHR의 동작은 크게 3단계로 구분됩니다.</p>
+<ol>
+  <li>객체생성</li>
+  <li>request 요청</li>
+  <li>response 수신</li>
+</ol>
+
+<h2 id="xmlhttprequest-객체">XMLHttpRequest 객체</h2>
+<p>최근의 웹사이트는 브라우저에서 직접 서버와 테이터 통신을 위해서 XMLHttpRequest 객체를 통하여 통신을 하고 있습니다.</p>
+
+<p>xhr을 사용하면 웹페이지가 서버로 전체 페이지를 다시 다운로드 받지 않고, 필요한 데이터만 주고 받을 수 있습니다.
+이로 인하여 페이지의 깜빡임 없이, 웹사이트의 일부 내용만을 변경할 수 있게 되는 것입니다.</p>
+
+<h3 id="xhr-객체의-생성">xhr 객체의 생성</h3>
+<p>과거 xhr은 브라우저별로 생성방식이 조금씩 달랐습니다. ie의 경우 별도의 ActiveX를 설치하여 객체를 생성하였다면,
+초신의 브라우져 들은 자바스크립틀 이용하여 xhr 객체를 생성할 수 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">ActiveXObject</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="c1">// 새로운 ms의 XMLHTTP 객체</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">ActiveObject</span><span class="p">(</span><span class="dl">"</span><span class="s2">Msxml2.XMLHTTP</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="c1">// 이전 버젼의 ms의 XMLHTTP 객체</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="nx">ActiveObject</span><span class="p">(</span><span class="dl">"</span><span class="s2">Microsoft.XMLHTTP</span><span class="dl">"</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e2</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">XMLHttpRequest</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>ie를 제외한 브라우저는 모두 XMLHttpRequest를 제공합니다.
+최신 마이크로소프트의 edge 브라우저의 경우 기본적으로 XMLHttpRequest를 제공합니다.</p>
+
+<p>자바스크립트에서 xhr 객체를 다음과 같이 생성할 수 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>html의 버튼요소를 클릭할때 동작을 하고자 할 경우에는 이벤트 등록을 한후에 xhr 객체를 생성할 수도 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">submit</span><span class="dl">"</span><span class="p">,</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>위의 예제는 폼의 전송버튼을 클릭할때, 기본동작을 제외하고 xhr 통신을 처리하기 위해 객체를 생성하는 과정입니다.</p>
+
+<h3 id="readystate-프로퍼티">readyState 프로퍼티</h3>
+<p>readyState는 XHR의 현재 상태를 나타내는 프로퍼티 입니다.
+이 값은 xhr의 동작 상태에 따라서 변화를 하게 됩니다.</p>
+
+<ul>
+  <li>UNSENT (숫자 0) : XMLHttpRequest 객체가 생성됨.</li>
+  <li>OPENED (숫자 1) : open() 메소드가 성공적으로 실행됨.</li>
+  <li>HEADERS_RECEIVED (숫자 2) : 모든 요청에 대한 응답이 도착함.</li>
+  <li>LOADING (숫자 3) : 요청한 데이터를 처리 중임.</li>
+  <li>DONE (숫자 4) : 요청한 데이터의 처리가 완료되어 응답할 준비가 완료됨.</li>
+</ul>
+
+<p>예제코드를 통하여 객체를 생성한 후에, <code class="language-plaintext highlighter-rouge">readyState</code> 값을 출력해 봅니다.
+값이 <code class="language-plaintext highlighter-rouge">0</code>으로 출력됩니다.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>XHR 테스트<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"xhrForm"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"전송"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+        <span class="kd">const</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">xhrForm</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">submit</span><span class="dl">"</span><span class="p">,</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">submit 클릭</span><span class="dl">"</span><span class="p">);</span>
+            <span class="kd">const</span> <span class="nx">xhr</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">();</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">xhr.readyState = </span><span class="dl">"</span><span class="o">+</span><span class="nx">xhr</span><span class="p">.</span><span class="nx">readyState</span><span class="p">);</span>
+        <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+
+		</div>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed end-0">
+      <!-- sidebar nav fixed -->
+      <div class="sidebar-nav-fixed">
+        <span class="px-4 mb-2 d-block text-uppercase ls-md fw-semi-bold fs-6">목차</span>
+        <ul class="list-unstyled" id="book-mark">
+
+        </ul>
+
+        <div>
+          <!--구글 애드센스1-->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-fb+5w+4e-db+86"
+              data-ad-client="ca-pub-3321560028329475"
+              data-ad-slot="6043271504"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <br>
+        </div>
+
+      </div>
+    </div>
+
+	<!-- Bookmark Components -->
+	<script src="/assets/jiny/js/bookmark.js"></script>	
+
+	<script>
+		window.addEventListener('DOMContentLoaded', function(){
+			let current_url = window.location.pathname.slice(0, -1);
+			let current_page = document.querySelector('a[href="'+current_url+'"]');
+			current_page.classList.add('active');
+		});		
+	</script>
+</div>
+      </div>
+    </div>
+  </div>
+
+	<!-- Scripts -->
+	<!-- Libs JS -->
+	<script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/libs/odometer/odometer.min.js"></script>
+	<script src="/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="/assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+	<script src="/assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+	<script src="/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+
+	<script src="/assets/libs/file-upload-with-preview/dist/file-upload-with-preview.iife.js"></script>
+	<script src="/assets/libs/dragula/dist/dragula.min.js"></script>
+	<script src="/assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+	<script src="/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+	<script src="/assets/libs/jQuery.print/jQuery.print.js"></script>
+	<script src="/assets/libs/prismjs/prism.js"></script>
+	<script src="/assets/libs/prismjs/components/prism-scss.min.js"></script>
+	<script src="/assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+	<script src="/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+	<script src="/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+	<script src="/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+	<script src="/assets/libs/typed.js/lib/typed.min.js"></script>
+	<script src="/assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+	<script src="/assets/libs/jsvectormap/dist/maps/world.js"></script>
+	<script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+	<script src="/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+	<script src="/assets/libs/fullcalendar/main.min.js"></script>
+	<script src="/assets/libs/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+	<script src="/assets/libs/simplebar/dist/simplebar.min.js"></script>
+	<script src="/assets/libs/nouislider/dist/nouislider.min.js"></script>
+	<script src="/assets/libs/wnumb/wNumb.min.js"></script>
+	<script src="/assets/libs/glightbox/dist/js/glightbox.min.js"></script>
+
+	<!-- CDN File for moment -->
+	<script src='https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js'></script>
+
+	<!-- Theme JS -->
+	<script src="/assets/js/theme.min.js"></script>
+</body>
+
+</html>

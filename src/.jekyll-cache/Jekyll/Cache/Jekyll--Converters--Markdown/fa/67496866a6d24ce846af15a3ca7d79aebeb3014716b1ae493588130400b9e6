@@ -1,13 +1,13 @@
-I"9<h1 id="헬로우-월드">헬로우 월드</h1>
+I"�<h1 id="헬로우-월드">헬로우 월드</h1>
 <hr />
-<p>대부분의 프로그램의 언어를 학습을 할때 <code class="highlighter-rouge">hello world</code>를 출력합니다.
-자바스크립트로 <code class="highlighter-rouge">hello world</code>를 출력하는 코드를 작성합니다.</p>
+<p>대부분의 프로그램의 언어를 학습을 할때 <code class="language-plaintext highlighter-rouge">hello world</code>를 출력합니다.
+자바스크립트로 <code class="language-plaintext highlighter-rouge">hello world</code>를 출력하는 코드를 작성합니다.</p>
 
 <h2 id="헬로우-유래">헬로우 유래</h2>
 <hr />
-<p><code class="highlighter-rouge">hello world</code>는 1972년 브라이언 커니핸(brian kemighan)이 벨 연수소에서 최초로 통신 메시지로 사용을 한것으로 알려져 있습니다.</p>
+<p><code class="language-plaintext highlighter-rouge">hello world</code>는 1972년 브라이언 커니핸(brian kemighan)이 벨 연수소에서 최초로 통신 메시지로 사용을 한것으로 알려져 있습니다.</p>
 
-<p>모든 프로그램의 언어의 시작에서는 간단한 프로그램의 동작을 확인하기 위해서 <code class="highlighter-rouge">hello world</code>를 출력하는 프로그램을 먼저 사용을 합니다.</p>
+<p>모든 프로그램의 언어의 시작에서는 간단한 프로그램의 동작을 확인하기 위해서 <code class="language-plaintext highlighter-rouge">hello world</code>를 출력하는 프로그램을 먼저 사용을 합니다.</p>
 
 <h2 id="실행">실행</h2>
 <hr />
@@ -31,7 +31,7 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<p>html 문서에 자바스크립트 코드를 작성하기 위해서는 <code class="highlighter-rouge">&lt;script&gt;...&lt;/script&gt;</code>테그를 같이 작서을 해주어야 합니다.</p>
+<p>html 문서에 자바스크립트 코드를 작성하기 위해서는 <code class="language-plaintext highlighter-rouge">&lt;script&gt;...&lt;/script&gt;</code>테그를 같이 작서을 해주어야 합니다.</p>
 
 <h2 id="코드작성">코드작성</h2>
 <hr />
@@ -60,6 +60,6 @@
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">document.write()</code>는 html의 body영역에 내용을 출력합니다.</p>
+<p><code class="language-plaintext highlighter-rouge">document.write()</code>는 html의 body영역에 내용을 출력합니다.</p>
 
 :ET

@@ -1,4 +1,4 @@
-I"Q<h1 id="응답-처리하기">응답 처리하기</h1>
+I"d<h1 id="응답-처리하기">응답 처리하기</h1>
 <p>xhr을 통하여 서버로 요청을 전송하였다면, 응답을 처리 합니다.</p>
 
 <h2 id="상태변경">상태변경</h2>
@@ -14,7 +14,7 @@
 <p>상태가 변경하게 되면 onreadystatechange 프로퍼티에 저장된 함수를 콜백합니다.</p>
 
 <p>이 콜백함수는 xhr의 서버응답 뿐만 아니라 opne() 이나 send() 메소드를 호출한 경우에도 실행됩니다.
-이는 xhr <code class="highlighter-rouge">readyStatus</code> 값이 바꿀때 마다 호출 되기 때문입니다.</p>
+이는 xhr <code class="language-plaintext highlighter-rouge">readyStatus</code> 값이 바꿀때 마다 호출 되기 때문입니다.</p>
 
 <h2 id="status">status</h2>
 <p>statusText 는 status 프로퍼티의 값을 설명하는 텍스트 문장을 저장합니다.</p>

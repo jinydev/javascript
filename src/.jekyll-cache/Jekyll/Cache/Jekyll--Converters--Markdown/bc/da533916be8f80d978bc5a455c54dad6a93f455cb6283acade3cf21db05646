@@ -1,4 +1,4 @@
-I"5	<h1 id="자바스크립트-파일">자바스크립트 파일</h1>
+I"n	<h1 id="자바스크립트-파일">자바스크립트 파일</h1>
 <hr />
 <p>자바스크립트는 html문서와 결합되어 해석 실행이 됩니다.<br />
 하지만, 스크립트가 html 문서에 같이 포함이 되어 있으면 많은 내용과 가독성이 떨어지게 됩니다.</p>
@@ -7,7 +7,7 @@
 <hr />
 <p>html에 포함되어 있는 자바스크립트 파일을 분리 합니다.</p>
 
-<p>별도의 파일을 생성합니다. 파일명은 <code class="highlighter-rouge">script.js</code>로 합니다.</p>
+<p>별도의 파일을 생성합니다. 파일명은 <code class="language-plaintext highlighter-rouge">script.js</code>로 합니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello world</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div>
@@ -15,12 +15,12 @@
 <h2 id="외부소스-설정">외부소스 설정</h2>
 <hr />
 <p>외부의 별도 파일로 분리되어 있는 자바스크립트 소스를 html에 외부 소스 설정으로 변경을 합니다.
-외부 소스로 변경을 하기 위해서는 <code class="highlighter-rouge">script</code> 테그의 소스 속성을 부여합니다.</p>
+외부 소스로 변경을 하기 위해서는 <code class="language-plaintext highlighter-rouge">script</code> 테그의 소스 속성을 부여합니다.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"파일명"</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></div></div>
 
-<p>그럼 분리된 <code class="highlighter-rouge">script.js</code>을 연결합니다.</p>
+<p>그럼 분리된 <code class="language-plaintext highlighter-rouge">script.js</code>을 연결합니다.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>

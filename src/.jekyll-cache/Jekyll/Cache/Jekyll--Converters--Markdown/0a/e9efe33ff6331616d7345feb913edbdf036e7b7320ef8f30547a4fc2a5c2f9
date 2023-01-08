@@ -1,12 +1,11 @@
-I"�
-<p>https://www.youtube.com/watch?v=wuI-uPqZYtE&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=19</p>
+I"<p>https://www.youtube.com/watch?v=wuI-uPqZYtE&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=19</p>
 
 <h1 id="이벤트-기반">이벤트 기반</h1>
 
 <p>html 문서내에 자바스크립트 코드는 script 테그로 안에 작성을 하게 됩니다.</p>
 
 <p>그외에 html의 요소에도 자바스크립트 코드를 작성할 수 있습니다.
-예를 들어 테그안에 <code class="highlighter-rouge">on동작명="자바스크립트"</code> 와 같은 코드를 넣을 수 있습니다.</p>
+예를 들어 테그안에 <code class="language-plaintext highlighter-rouge">on동작명="자바스크립트"</code> 와 같은 코드를 넣을 수 있습니다.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">input</span> <span class="nx">onclick</span><span class="o">=</span><span class="dl">"</span><span class="s2">alert()</span><span class="dl">"</span><span class="o">&gt;</span>
 </code></pre></div></div>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Geeks is a fully responsive and yet modern premium bootstrap 5 template & snippets. Geek is feature-rich components and beautifully designed pages that help you create the best possible website and web application projects. Bootstrap Snippet " />
+		<meta name="keywords" content="Geeks UI, bootstrap, bootstrap 5, Course, Sass, landing, Marketing, admin themes, bootstrap admin, bootstrap dashboard, ui kit, web app, dash ui, admin dashboard, HTML5, multipurpose" />
+
+
+
+
+		<!-- Favicon icon-->
+		<link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon/favicon.ico">
+
+
+		<!-- Libs CSS -->
+		<link href="/assets/fonts/feather/feather.css" rel="stylesheet">
+		<link href="/assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+		<link href="/assets/libs/dragula/dist/dragula.min.css" rel="stylesheet" />
+		<link href="/assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+		<link href="/assets/libs/dropzone/dist/dropzone.css" rel="stylesheet" />
+		<link href="/assets/libs/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+		<link href="/assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+		<link href="/assets/libs/@yaireo/tagify/dist/tagify.css" rel="stylesheet">
+		<link href="/assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+		<link href="/assets/libs/tippy.js/dist/tippy.css" rel="stylesheet">
+		<link href="/assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+		<link href="/assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+		<link href="/assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+		<link href="/assets/libs/nouislider/dist/nouislider.min.css" rel="stylesheet">
+		<link href="/assets/libs/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="/assets/css/theme.min.css">
+		
+
+		<!--SEO--><title>Javascript | XMLHttpRequest</title>
+            <meta name="title" content="XMLHttpRequest" /><meta name="description" content="자바스크립트의 XMLHttpRequest를 통한 통신방법에 대해서 학습합니다." /><meta name="keyword" content="XMLHttpRequest, ajax, javascript" /></head>
+
+<body class="bg-white">
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    <!-- Docs header --><div class="docs-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ms-0">
+         <a class="navbar-brand" href="/">
+            지니데브-Javascript
+         </a>
+
+         <ul class="navbar-nav ms-auto flex-row">
+            <li class="nav-item docs-header-btn">
+               <a target="_blank" href="">Github</a>
+            </li>
+
+            <li class="nav-item d-md-none">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+            </li>
+         </ul>
+
+    </nav>
+</div><!-- left sidebar -->
+	<!-- Nav Sidebar -->
+	<div class="docs-nav-sidebar">
+		<div class="py-5"></div>
+		<div class=" docs-nav " data-simplebar>
+			<nav class="navbar navbar-expand-md">
+			<div class="collapse navbar-collapse " id="navbarNav"><ul class="navbar-nav flex-column" id="sidebarnav">
+    <li class="navbar-header">
+            <h5 class="heading">시작하기전에</h5>
+        </li>
+        <li class="nav-item">
+            <a href="/setup" class="nav-link">설정</a>
+        </li><li class="nav-item">
+            <a href="/javascript" class="nav-link">자바스크립트란?</a>
+        </li>
+        <li>
+            <div class="navbar-border"></div>
+        </li>
+
+    <!-- Getting Started -->
+    <li class="navbar-header">
+        <h5 class="heading">시작하기 전에</h5>
+    </li>
+    <li class="nav-item">
+        <a href="/setup" class="nav-link">설정</a>
+    </li>
+    <li class="nav-item">
+        <a href="/javascript" class="nav-link">자바스크립트란?</a>
+    </li>
+  
+    <li>
+    <div class="navbar-border"></div>
+    </li>
+
+    <!-- Getting Started -->
+    <li class="navbar-header">
+      <h5 class="heading">기본학습</h5>
+    </li>
+    <li class="nav-item">
+        <a href="/basic" class="nav-link">기본문법</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/variable" class="nav-link">변수상수</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/condition" class="nav-link">제어문</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/loop" class="nav-link">반복문</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/es5" class="nav-link">ES5</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/es6" class="nav-link">ES6</a>
+    </li>
+    <li class="nav-item">
+        <a href="/basic/lecture" class="nav-link">웅용</a>
+    </li>
+
+    <li>
+      <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">브라우저 및 DOM</h5>
+    </li>
+    <li class="nav-item">
+        <a href="dom" class="nav-link">DOM</a>
+    </li>
+    <li class="nav-item">
+        <a href="api" class="nav-link">API</a>
+    </li>
+
+    <li>
+        <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">Node&Express</h5>
+    </li>
+    <li class="nav-item">
+        <a href="node" class="nav-link">node</a>
+    </li>
+
+    <li>
+        <div class="navbar-border"></div>
+    </li>
+
+    <li class="navbar-header">
+        <h5 class="heading">Jquery</h5>
+    </li>
+    <li class="nav-item">
+        <a href="jquery" class="nav-link">jquery</a>
+    </li>
+</ul></div>
+			</nav>
+		</div>
+		<div class="nav-footer">
+			<p class="mb-0"> Developed by JinyDev</p>
+		</div>
+	</div>
+
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+    <div class="col-xl-10 col-md-12 col-sm-12 col-12 ">
+		<!-- Breadcrumb -->
+		<nav aria-label="breadcrumb" style="margin-top: 50px; padding: 0 10px 0 10px;">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">Home</a></li>
+				<!--breadcrumb loop--></ol>    
+		</nav>
+		
+		<!-- Content -->
+		<div class="docs-content mx-xxl-9">
+			<h1 id="xmlhttp-request">XMLHttp Request</h1>
+<p>생성된 xhr를 이용하여 서버로 요청을 전송합니다.</p>
+
+<h2 id="open">open</h2>
+<p>생성된 xhr 객체를 통하여 통신을 원하는 주소를 선택합니다.</p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">http://localhost:8000/upload.php</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="get">GET</h3>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">/test.jsp?id=neloi&amp;pw=1234</span><span class="dl">"</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="post">POST</h3>
+
+<h3 id="put">PUT</h3>
+
+<h3 id="delete">DELETE</h3>
+
+<h2 id="서버에-실제-요청을-전송">서버에 실제 요청을 전송</h2>
+<p><code class="language-plaintext highlighter-rouge">send()</code> 메서드는 준비한 xhr 객체를 통하여 실제 서버에 요청을 전송합니다.</p>
+
+<p>만일, GET방식으로 요구한 경우 파라미터가 없다면 인자 값에 null을 주어야 합니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">httpRequest</span> <span class="o">=</span> <span class="nx">getXMLHttpRequest</span><span class="p">();</span>
+<span class="nx">httpRequest</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">/test.jsp?id=neloi&amp;pw=1234</span><span class="dl">"</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span>
+<span class="nx">httpRequest</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>POST방식으로 요구한 경우 서버로 보내고 싶은 어떠한 데이터라도 가능하다. 
+다만 데이터는 서버에서 쉽게 parse할 수 있는 형식(format)이어야 하거나 JSON, SOAP 등과 같은 다른 형식으로도 가능하다.</p>
+<ul>
+  <li>아래는 GET방식과 POST방식에 대한 예제코드이다.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">httpRequest</span> <span class="o">=</span> <span class="nx">getXMLHttpRequest</span><span class="p">();</span> 
+<span class="nx">httpRequest</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">/test.jsp</span><span class="dl">"</span><span class="p">,</span><span class="kc">true</span><span class="p">);</span> 
+<span class="nx">httpRequest</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">"</span><span class="s2">id=neloi&amp;pw=1234</span><span class="dl">"</span><span class="p">);</span>
+
+
+<span class="err">###</span> <span class="nx">status</span> <span class="nx">프로퍼티</span>
+<span class="nx">status</span> <span class="nx">프로퍼티는</span> <span class="nx">서버의</span> <span class="nx">문서</span> <span class="nx">상태를</span> <span class="nx">나타냅니다</span><span class="p">.</span>
+ <span class="o">-</span> <span class="mi">200</span> <span class="p">:</span> <span class="nx">서버에</span> <span class="nx">문서가</span> <span class="nx">존재함</span><span class="p">.</span>
+ <span class="o">-</span> <span class="mi">404</span> <span class="p">:</span> <span class="nx">서버에</span> <span class="nx">문서가</span> <span class="nx">존재하지</span> <span class="nx">않음</span><span class="p">.</span>
+
+
+<span class="err">##</span> <span class="nx">responseText</span> <span class="nx">프로퍼티</span>
+<span class="s2">`responseText`</span> <span class="nx">프로퍼티는</span> <span class="nx">서버에</span> <span class="nx">요청하여</span> <span class="nx">응답으로</span> <span class="nx">받은</span> <span class="nx">데이터를</span> <span class="nx">문자열로</span> <span class="nx">저장하고</span> <span class="nx">있습니다</span><span class="p">.</span>
+
+<span class="s2">```js
+document.getElementById("text").innerHTML = xhr.responseText;
+</span></code></pre></div></div>
+
+<h2 id="responsexml-프로퍼티">responseXML 프로퍼티</h2>
+<p><code class="language-plaintext highlighter-rouge">responseXML</code> 프로퍼티는 서버에 요청하여 응답으로 받은 데이터를 XML <code class="language-plaintext highlighter-rouge">DOM 객체</code>로 저장하고 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">xmlObj</span> <span class="o">=</span> <span class="nx">xmlHttp</span><span class="p">.</span><span class="nx">responseXML</span><span class="p">;</span> <span class="c1">// 요청한 데이터를 XML DOM 객체로 반환함.</span>
+<span class="nx">nameList</span> <span class="o">=</span> <span class="nx">xmlObj</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// XML DOM 객체에서 요소이름이 "name"인 요소들을 선택함.</span>
+
+<span class="nx">result</span> <span class="o">=</span> <span class="dl">""</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">idx</span> <span class="o">&lt;</span> <span class="nx">nameList</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">idx</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// id가 "name"인 요소들의 텍스트 노드를 찾아 그 값을 반환함.</span>
+    <span class="nx">result</span> <span class="o">+=</span> <span class="nx">nameList</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">childNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeValue</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">&lt;br&gt;</span><span class="dl">"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="비동기식asynchronous-요청">비동기식(asynchronous) 요청</h2>
+<p>서버에 비동기식 요청을 보내기 위해서는 <code class="language-plaintext highlighter-rouge">open() 메소드</code>의 세 번째 인수로 <code class="language-plaintext highlighter-rouge">true</code>를 전달하면 됩니다.</p>
+
+<p>이렇게 비동기식으로 요청을 보내면 자바스크립트는 서버로부터 <code class="language-plaintext highlighter-rouge">응답을 기다리면서</code> 동시에 <code class="language-plaintext highlighter-rouge">다른 일</code>을 할 수 있게 됩니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">xmlHttp</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">GET</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">/media/programming_languages.xml</span><span class="dl">"</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h1 id="웹서버에-요청하기">웹서버에 요청하기</h1>
+<p>xhr를 통하여 서버에 데이터를 요청하기 위해서는 두단계의 동작이 필요합니다.
+먼저 open 과 send 입니다.</p>
+
+<h2 id="open-1">open</h2>
+<p>open() 메서드를 이요하여 쵸엉을 초기화 하빈다. 초기화시 http의 메서드를 같이 설정할 수 있습니다.</p>
+
+<ul>
+  <li>첫번째 인자로 GET / POST와 같은 값을 지정합니다.</li>
+  <li>두번째 인자로 접속할 url을 설정합니다.
+url을 입력할 때에는 동일한 도메인 주소를 가지는 경로를 입력해야 합니다.</li>
+  <li>세번째는 동시/비동기를 선택합니다.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">xhr</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">http://localhost:8000/upload.php</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# 응답처리
+xhr로 요청을 전송하였다면, 응답을 받게 됩니다.
+
+xhr 객체가 서버로 부터 응답을 받게 되면 `readyState` 프로퍼티값이 변경하게 됩니다. 
+값이 변경될때 동작을 할 수 있도록 onreadystatechange 프로퍼티에 함수를 등록합니다.
+
+
+```js
+httpRequest.onreadystatechange = callbackFunction;
+function callbackFunction(){ 
+    //서버로부터 응답이 왔으므로 알맞은 작업을 수행 
+}
+</code></pre></div></div>
+
+<p>버로부터 응답이 도착하면 콜백 함수가 호출된다고 했었는데, 
+실제 콜백 함수가 호출되는 시점은 readyState라는 프로퍼티의 값이 변경될 때마다 호출된다.</p>
+
+<p>값 / 의미 / 설명
+0 / UNINITIALIZED / 객체만 생성되고 아직 초기화되지 않은 상태, open() 메서드가 호출되지 않았음
+1 / LOADING / open() 메서드가 호출되고 아직 send() 메서드가 호출되지 않은 상태
+2 / LOADED / send() 메서드가 호출되었지만 STATUS와 헤더는 도착하지 않은 상태
+3 / INTERACTIVE / 데이터의 일부를 받은 상태
+4 / COMPLETED / 데이터를 전부 받은 상태</p>
+
+<ul>
+  <li>보통은 readyState 값이 4인 경우만 원하는 기능을 수행하지만 가끔 시간이 걸릴 경우 아래 예제코드와 같이 나머지 값을 유용하게 사용할 수 있다.</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">callbackFunction</span><span class="p">(){</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">1</span>  <span class="o">||</span>  <span class="nx">httpRequest</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">2</span>
+       <span class="o">||</span> <span class="nx">httpRequest</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span><span class="mi">3</span> <span class="p">){</span>
+                       <span class="c1">//화면에 작업 중 메시지 출력</span>
+      <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span><span class="p">){</span>
+           <span class="k">if</span><span class="p">(</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">){</span>
+                   <span class="c1">//서버 응답 결과에 따라 알맞은 작업 처리</span>
+           <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+               <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">문제 발생:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">httpRequest</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span>
+           <span class="p">}</span>
+      <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="readystate-값이-4인-경우">readyState 값이 4인 경우</h2>
+<p>서버로 부터 응답을 전부 수신받은 경우 상태코드를 확인 할 수 있습니다.
+전달받은 상태값은 status 프로퍼티에 저장이 됩니다.</p>
+
+<p>200 / OK / 요청 성공
+403 / Forbidden / 접근 거부
+404 / Not Found / 페이지 없음
+500 / Internal Server Error / 서버 오류</p>
+
+<h3 id="응답-데이터-사용">응답 데이터 사용</h3>
+
+<h4 id="responsetext">responseText</h4>
+
+<p>서버 응답에 따른 확인사항 처리 후(readyState == 4 &amp;&amp; status == 200) 이상이 없다면, 이제 서버가 전송한 데이터를 사용해야 한다.</p>
+<ul>
+  <li>단순 텍스트 형식(format)에 대한 데이터 처리를 해보겠다.
+서버가 생성한 단순 응답 텍스트를 참조하려면 responseText 프로퍼티를 사용하면 된다.</li>
+  <li>아래 예제코드 참고(서버의 응답 텍스트를 alert로 출력해 주는 예제)</li>
+</ul>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span> <span class="k">if</span> <span class="p">(</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">responseText</span><span class="p">);</span> <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">실패: </span><span class="dl">"</span><span class="o">+</span><span class="nx">httpRequest</span><span class="p">.</span><span class="nx">status</span><span class="p">);</span> <span class="p">}</span> <span class="p">}</span>
+
+<span class="nl">출처</span><span class="p">:</span> <span class="nl">https</span><span class="p">:</span><span class="c1">//myeonguni.tistory.com/1526 [명우니닷컴]</span>
+</code></pre></div></div>
+
+
+		</div>
+    </div>
+    
+    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed end-0">
+      <!-- sidebar nav fixed -->
+      <div class="sidebar-nav-fixed">
+        <span class="px-4 mb-2 d-block text-uppercase ls-md fw-semi-bold fs-6">목차</span>
+        <ul class="list-unstyled" id="book-mark">
+
+        </ul>
+
+        <div>
+          <!--구글 애드센스1-->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block"
+              data-ad-format="fluid"
+              data-ad-layout-key="-fb+5w+4e-db+86"
+              data-ad-client="ca-pub-3321560028329475"
+              data-ad-slot="6043271504"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <br>
+        </div>
+
+      </div>
+    </div>
+
+	<!-- Bookmark Components -->
+	<script src="/assets/jiny/js/bookmark.js"></script>	
+
+	<script>
+		window.addEventListener('DOMContentLoaded', function(){
+			let current_url = window.location.pathname.slice(0, -1);
+			let current_page = document.querySelector('a[href="'+current_url+'"]');
+			current_page.classList.add('active');
+		});		
+	</script>
+</div>
+      </div>
+    </div>
+  </div>
+
+	<!-- Scripts -->
+	<!-- Libs JS -->
+	<script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/assets/libs/odometer/odometer.min.js"></script>
+	<script src="/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="/assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+	<script src="/assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+	<script src="/assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
+	<script src="/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+
+	<script src="/assets/libs/file-upload-with-preview/dist/file-upload-with-preview.iife.js"></script>
+	<script src="/assets/libs/dragula/dist/dragula.min.js"></script>
+	<script src="/assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+	<script src="/assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+	<script src="/assets/libs/jQuery.print/jQuery.print.js"></script>
+	<script src="/assets/libs/prismjs/prism.js"></script>
+	<script src="/assets/libs/prismjs/components/prism-scss.min.js"></script>
+	<script src="/assets/libs/@yaireo/tagify/dist/tagify.min.js"></script>
+	<script src="/assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+	<script src="/assets/libs/@popperjs/core/dist/umd/popper.min.js"></script>
+	<script src="/assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+	<script src="/assets/libs/typed.js/lib/typed.min.js"></script>
+	<script src="/assets/libs/jsvectormap/dist/js/jsvectormap.min.js"></script>
+	<script src="/assets/libs/jsvectormap/dist/maps/world.js"></script>
+	<script src="/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="/assets/libs/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+	<script src="/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="/assets/libs/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+	<script src="/assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+	<script src="/assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+	<script src="/assets/libs/fullcalendar/main.min.js"></script>
+	<script src="/assets/libs/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+	<script src="/assets/libs/simplebar/dist/simplebar.min.js"></script>
+	<script src="/assets/libs/nouislider/dist/nouislider.min.js"></script>
+	<script src="/assets/libs/wnumb/wNumb.min.js"></script>
+	<script src="/assets/libs/glightbox/dist/js/glightbox.min.js"></script>
+
+	<!-- CDN File for moment -->
+	<script src='https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js'></script>
+
+	<!-- Theme JS -->
+	<script src="/assets/js/theme.min.js"></script>
+</body>
+
+</html>

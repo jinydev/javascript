@@ -1,0 +1,18 @@
+---
+layout: home
+title: "javascript"
+keyword: "javascript"
+description: "javascript를 학습합니다."
+---
+
+{{ site.title }}
+
+<ul>
+    {% for nav in site.data.side %}
+      <li>
+        <a href="">
+          {{ nav.title}}
+        </a>
+      </li>
+    {% endfor %}
+</ul>

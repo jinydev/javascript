@@ -1,16 +1,16 @@
-I",<h1 id="if문">if문</h1>
+I"z,<h1 id="if문">if문</h1>
 <hr />
 <p>if는 모든 언어에서 공통적으로 제공하는 조건 제어문 입니다.
 원리와 동작은 매우 유사합니다.</p>
 
 <h2 id="키워드">키워드</h2>
 <hr />
-<p>if 제어문은 문장내에서 <code class="highlighter-rouge">if</code> 키워드를 사용합니다.<br />
-<code class="highlighter-rouge">if 키워드</code>는 자바스크립트 말고도 <code class="highlighter-rouge">php</code>, <code class="highlighter-rouge">c언어</code>에서도 공통적으로 가장 많이 사용을 하는 제어 키워드 입니다.</p>
+<p>if 제어문은 문장내에서 <code class="language-plaintext highlighter-rouge">if</code> 키워드를 사용합니다.<br />
+<code class="language-plaintext highlighter-rouge">if 키워드</code>는 자바스크립트 말고도 <code class="language-plaintext highlighter-rouge">php</code>, <code class="language-plaintext highlighter-rouge">c언어</code>에서도 공통적으로 가장 많이 사용을 하는 제어 키워드 입니다.</p>
 
 <p>기본적인 구조는 다음과 같습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="p">)</span> <span class="err">실행</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">조건</span><span class="p">)</span> <span class="nx">실행</span>
 </code></pre></div></div>
 
 <h2 id="조건">조건</h2>
@@ -30,7 +30,7 @@
 
 <h3 id="연산기호">연산기호</h3>
 <hr />
-<p><code class="highlighter-rouge">&gt;</code>, <code class="highlighter-rouge">&lt;</code>, <code class="highlighter-rouge">&gt;=</code>, <code class="highlighter-rouge">&lt;=</code>, <code class="highlighter-rouge">==</code>, <code class="highlighter-rouge">===</code>과 같은 비교 연산자를 사용할 수 있습니다.</p>
+<p><code class="language-plaintext highlighter-rouge">&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;</code>, <code class="language-plaintext highlighter-rouge">&gt;=</code>, <code class="language-plaintext highlighter-rouge">&lt;=</code>, <code class="language-plaintext highlighter-rouge">==</code>, <code class="language-plaintext highlighter-rouge">===</code>과 같은 비교 연산자를 사용할 수 있습니다.</p>
 
 <h3 id="연산식">연산식</h3>
 <hr />
@@ -46,9 +46,9 @@
 
 <h3 id="논리연산">논리연산</h3>
 <hr />
-<p>또한 다수의 조건을 결합 할때에는 <code class="highlighter-rouge">&amp;&amp;</code>, <code class="highlighter-rouge">||</code>를 사용합니다.</p>
+<p>또한 다수의 조건을 결합 할때에는 <code class="language-plaintext highlighter-rouge">&amp;&amp;</code>, <code class="language-plaintext highlighter-rouge">||</code>를 사용합니다.</p>
 
-<p>필요에 따라서 연산자의 우선순의를 변경하는 <code class="highlighter-rouge">()</code>도 같이 사용이 됩니다.</p>
+<p>필요에 따라서 연산자의 우선순의를 변경하는 <code class="language-plaintext highlighter-rouge">()</code>도 같이 사용이 됩니다.</p>
 
 <h2 id="조건식의-활용">조건식의 활용</h2>
 <hr />
@@ -72,7 +72,7 @@
 <span class="k">if</span> <span class="p">(</span><span class="nx">conf</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">참 입니다.</span><span class="dl">'</span><span class="p">);</span> 
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node if_01.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node if_01.js
 참 입니다.
 </code></pre></div></div>
 
@@ -91,13 +91,13 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node if_02.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node if_02.js
 거짓 입니다.
 </code></pre></div></div>
 
 <h4 id="부정">부정</h4>
 <hr />
-<p>조건의 값을 반대로 바꿀 수 있습니다. 조건앞에 <code class="highlighter-rouge">!</code>를 붙여 줍니다.</p>
+<p>조건의 값을 반대로 바꿀 수 있습니다. 조건앞에 <code class="language-plaintext highlighter-rouge">!</code>를 붙여 줍니다.</p>
 
 <p>참인 조건은 거짓이 되며, 거짓 조건은 참이 됩니다.</p>
 
@@ -110,7 +110,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node if_03.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node if_03.js
 참 입니다.
 </code></pre></div></div>
 
@@ -120,11 +120,11 @@
 
 <p>else 다음에 새로운 if 조건을 결합합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">조건1</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// 동작1</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">조건2</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// 동작2</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">조건3</span><span class="p">)</span> <span class="p">{</span>
     <span class="c1">// 동작3</span>
 <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
     <span class="c1">// 동작4</span>
@@ -137,9 +137,9 @@
 <hr />
 <p>if 제어문의 조건이 만족하는 경우 하나의 문장을 실행합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="p">)</span> <span class="err">실행</span><span class="mi">1</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="p">)</span> <span class="err">실행</span><span class="mi">2</span><span class="p">;</span>
-<span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="p">)</span> <span class="err">실행</span><span class="mi">3</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">조건</span><span class="p">)</span> <span class="nx">실행1</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">조건</span><span class="p">)</span> <span class="nx">실행2</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">조건</span><span class="p">)</span> <span class="nx">실행3</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p>동일한 조건의 실행이 여러개 일 경우, 매번 조건을 판별할 필요가 없습니다.<br />
@@ -147,11 +147,11 @@
 
 <p>여러 코드를 묽어서 실행을 할때 중괄호를 사용을 합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="err">조건</span><span class="p">)</span> 
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="nx">조건</span><span class="p">)</span> 
 <span class="p">{</span>
-    <span class="err">실행</span><span class="mi">1</span><span class="p">;</span>
-    <span class="err">실행</span><span class="mi">2</span><span class="p">;</span>
-    <span class="err">실행</span><span class="mi">3</span><span class="p">;</span>
+    <span class="nx">실행1</span><span class="p">;</span>
+    <span class="nx">실행2</span><span class="p">;</span>
+    <span class="nx">실행3</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 

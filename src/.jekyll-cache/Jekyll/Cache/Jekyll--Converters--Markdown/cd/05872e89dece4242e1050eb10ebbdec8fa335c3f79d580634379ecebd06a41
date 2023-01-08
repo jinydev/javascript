@@ -1,4 +1,4 @@
-I"a<h1 id="출력">출력</h1>
+I"'<h1 id="출력">출력</h1>
 <hr />
 <p>자바스크립트의 결과를 확인을 하기 위해서는 화면 출력이 필요합니다.</p>
 
@@ -6,13 +6,13 @@
 <hr />
 <p>결과를 브라우저 화면으로 출력을 합니다.</p>
 
-<p>브라우저 객체를 제어하여 문서의 <code class="highlighter-rouge">&lt;body&gt;&lt;/body&gt;</code> 테그 안에 글자를 삽입합니다.</p>
+<p>브라우저 객체를 제어하여 문서의 <code class="language-plaintext highlighter-rouge">&lt;body&gt;&lt;/body&gt;</code> 테그 안에 글자를 삽입합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="err">메시지</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">메시지</span><span class="p">);</span>
 </code></pre></div></div>
 <p>여러 메시지를 하나의 write()로 출력을 할때에는 콤마를 이용합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="err">메시지</span><span class="mi">1</span><span class="p">,</span> <span class="err">메시지</span><span class="mi">2</span><span class="p">,</span> <span class="err">메시지</span><span class="mi">3</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="nx">메시지1</span><span class="p">,</span> <span class="nx">메시지2</span><span class="p">,</span> <span class="nx">메시지3</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>초보자의 경우 이 방식을 많이 사용합니다.</p>
@@ -21,7 +21,7 @@
 <hr />
 <p>브라우저의 메시지 창을 실행하여 결과를 출력 합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="err">메시지</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">alert</span><span class="p">(</span><span class="nx">메시지</span><span class="p">);</span>
 </code></pre></div></div>
 
 <h2 id="콘솔출력">콘솔출력</h2>

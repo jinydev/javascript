@@ -1,4 +1,4 @@
-I"�"<h1 id="xmlhttprequest">XMLHttpRequest</h1>
+I"�"<h1 id="xmlhttprequest">XMLHttpRequest</h1>
 <hr />
 <p>XMLHttpRequest는 클라이언트 브라우저와 서버간 데이터를 통신하는 객체입니다. 이 객체는 자바스크립트에 의해서 제공하고 주로 API 통신으로 많이 사용합니다.</p>
 
@@ -70,8 +70,8 @@
   <li>DONE (숫자 4) : 요청한 데이터의 처리가 완료되어 응답할 준비가 완료됨.</li>
 </ul>
 
-<p>예제코드를 통하여 객체를 생성한 후에, <code class="highlighter-rouge">readyState</code> 값을 출력해 봅니다.
-값이 <code class="highlighter-rouge">0</code>으로 출력됩니다.</p>
+<p>예제코드를 통하여 객체를 생성한 후에, <code class="language-plaintext highlighter-rouge">readyState</code> 값을 출력해 봅니다.
+값이 <code class="language-plaintext highlighter-rouge">0</code>으로 출력됩니다.</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"ko"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;head&gt;</span>

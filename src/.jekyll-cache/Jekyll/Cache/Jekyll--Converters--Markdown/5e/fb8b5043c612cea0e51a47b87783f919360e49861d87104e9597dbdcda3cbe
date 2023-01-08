@@ -1,4 +1,4 @@
-I"�<h1 id="리턴">리턴</h1>
+I"<h1 id="리턴">리턴</h1>
 <p>함수의 리턴은 처리한 결과를 출력하는 값입니다. 하나의 값만 출력을 할 수 있습니다.
 출력시 타입을 지정하여 출력을 할 수 있습니다.</p>
 
@@ -6,7 +6,7 @@
 <p>함수는 내부의 코드를 실행후에 반환값을 전달 할 수 있습니다.</p>
 
 <h3 id="return">return</h3>
-<p><code class="highlighter-rouge">return</code> 키워드는 함수의 종료와 이후 지정된 리터럴 값을 반환합니다.</p>
+<p><code class="language-plaintext highlighter-rouge">return</code> 키워드는 함수의 종료와 이후 지정된 리터럴 값을 반환합니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 함수를 선언합니다.</span>
 <span class="kd">function</span> <span class="nx">greeting</span><span class="p">()</span>
@@ -22,7 +22,7 @@
 <p>반한값은 1개만 존재합니다. 여러개의 반환값이 있을경우, 배열 또는 객체를 반환하면 됩니다.</p>
 
 <p>실행결과</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node return_01.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node return_01.js
 안녕하세요
 </code></pre></div></div>
 
@@ -44,7 +44,7 @@
 </code></pre></div></div>
 
 <p>실행결과</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node return_02.js
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ node return_02.js
 hello world
 </code></pre></div></div>
 :ET

@@ -1,4 +1,4 @@
-I"'<h1 id="switch">switch</h1>
+I"-<h1 id="switch">switch</h1>
 <hr />
 <p>if문은 조건을 다양하게 주어질 수 있습니다.
 크기를 비교하고, 참과 거짓을 구별하며, 값의 일치를 판별할 수 있습니다.</p>
@@ -7,14 +7,14 @@
 
 <h2>==</h2>
 <hr />
-<p><code class="highlighter-rouge">switch</code>는 <code class="highlighter-rouge">if</code>조건과 달리 <code class="highlighter-rouge">==</code> 연산조건 상태만을 파악을 할 수 있습니다.</p>
+<p><code class="language-plaintext highlighter-rouge">switch</code>는 <code class="language-plaintext highlighter-rouge">if</code>조건과 달리 <code class="language-plaintext highlighter-rouge">==</code> 연산조건 상태만을 파악을 할 수 있습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="p">(</span><span class="err">표현식</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="err">값</span><span class="mi">1</span><span class="p">:</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">switch</span><span class="p">(</span><span class="nx">표현식</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="nx">값1</span><span class="p">:</span>
         <span class="c1">// 동작1</span>
         <span class="k">break</span><span class="p">;</span>
     
-    <span class="k">case</span> <span class="err">값</span><span class="mi">2</span><span class="p">:</span>
+    <span class="k">case</span> <span class="nx">값2</span><span class="p">:</span>
         <span class="c1">// 동작2</span>
         <span class="k">break</span><span class="p">;</span>
     

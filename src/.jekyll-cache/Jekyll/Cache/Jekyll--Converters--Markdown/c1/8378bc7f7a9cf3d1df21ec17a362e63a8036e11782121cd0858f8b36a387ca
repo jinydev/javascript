@@ -1,4 +1,4 @@
-I"�<p>https://www.youtube.com/watch?v=VdKQxYMZw3c&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=18</p>
+I"�<p>https://www.youtube.com/watch?v=VdKQxYMZw3c&amp;list=PLq8wAnVUcTFWhQrIXNN6kPYXJA6X2IQM4&amp;index=18</p>
 
 <h1 id="브라우저-플렛폼">브라우저 플렛폼</h1>
 <p>브라우저는 몇가지 객체를 제공합니다.</p>
@@ -20,7 +20,7 @@
 <p>자바스크립트를 통하여 제어를 허용</p>
 
 <h2 id="window">window</h2>
-<p>브라우저 자체를 제어할 수 있는 객체로 <code class="highlighter-rouge">window</code> 객체가 있습니다.</p>
+<p>브라우저 자체를 제어할 수 있는 객체로 <code class="language-plaintext highlighter-rouge">window</code> 객체가 있습니다.</p>
 
 <p>서브 객체
 브라우저의 요소들들을 제어할 수 있는 서브 객체를 제공합니다.</p>
@@ -50,7 +50,7 @@ window.history</p>
 
 <h2 id="prompt">prompt</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prompt("문자열", 초기값);
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prompt("문자열", 초기값);
 </code></pre></div></div>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">;</span>
@@ -83,7 +83,7 @@ not a number 의 약자 입니다.</p>
 <p>브라우저는 문서구조를 표현할때 숫자와 단위를 같이 포함하여 문자로 표현합니다.
 따라서 12px 과 같이 12 숫자와 px 라는 문자가 같이 들어오게 됩니다.</p>
 
-<p>parseInt는 단위를 포함하는 문자열이 포함하고 있을때, 이를 자동으로 판별하여 숫자로 변환해 주는 <code class="highlighter-rouge">편리한 기능</code>이 있습니다.
+<p>parseInt는 단위를 포함하는 문자열이 포함하고 있을때, 이를 자동으로 판별하여 숫자로 변환해 주는 <code class="language-plaintext highlighter-rouge">편리한 기능</code>이 있습니다.
 굿이 문자열을 분석하여 숫자만을 추출할 필요가 없습니다.</p>
 
 <h2 id="참조사이트">참조사이트</h2>
